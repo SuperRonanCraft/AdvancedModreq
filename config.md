@@ -33,7 +33,7 @@
   Value Type:  
   - Max: Integer  
   - Suffix: String  
-  ..Default Value:..
+  ⋅⋅Default Value:⋅⋅
   - Max: 32  
   - Suffix: '...'  
   
