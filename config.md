@@ -5,8 +5,8 @@
 - [Settings](#user-content-settings)
 
 #### Disable-Updater ####
-  Info: Disable the "update avaiable" if an update is available
-  Values: 'true' or 'false'
+  Info: Disable the "update avaiable" if an update is available  
+  Values: 'true' or 'false'  
   Default Value: 'false'
 
 #### Settings ####
