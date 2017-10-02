@@ -1,8 +1,8 @@
 # Config #
 
 ### Summary ###
-  - [Disable-Updater](#user-content-disable-updater)
-  - [Settings](#user-content-settings)
+- [Disable-Updater](#user-content-disable-updater) 
+- [Settings](#user-content-settings)
 
 #### Disable-Updater ####
   Info: Disable the "update avaiable" if an update is available  
@@ -11,12 +11,12 @@
 
 #### Settings ####
   #### Settings Summary ####
-    - [DownloadBDOnReload](#user-content-downloaddbonreload)
-    - [MinimumWords](#user-content-minimumwords)
-    - [MessageCutOff](#user-content-messagecutoff)
-    - [Importance](#user-content-importance)
-    - [Rating](#user-content-rating)
-    - [Filter](#user-content-filter)
+  - [DownloadBDOnReload](#user-content-downloaddbonreload)
+  - [MinimumWords](#user-content-minimumwords)
+  - [MessageCutOff](#user-content-messagecutoff)
+  - [Importance](#user-content-importance)
+  - [Rating](#user-content-rating)
+  - [Filter](#user-content-filter)
   
   #### DownloadDBOnReload ####
     Info: Download the database (if MySQL is enabled) on plugin reload  
@@ -29,19 +29,19 @@
     Default Value: 5
   
   #### MessageCutOff ####
-    Info: The maximum characters allowed until a line is cutoff  
-    Value Type:
-    ```yaml
-    MessageCutOff:
-      Max: Integer  
-      Suffix: String
-    ```
-    Default Value: 
-    ```yaml 
-    MessageCutOff:
-      Max: 32  
-      Suffix: '...'
-    ```
+  Info: The maximum characters allowed until a line is cutoff  
+  Value Type:
+  ```yaml
+  MessageCutOff:
+    Max: Integer  
+    Suffix: String
+  ```
+  Default Value: 
+  ```yaml 
+  MessageCutOff:
+    Max: 32  
+    Suffix: '...'
+  ```
   
   #### Importance ####
     Info: Enable the importance system?  
