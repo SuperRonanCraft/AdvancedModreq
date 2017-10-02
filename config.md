@@ -11,21 +11,17 @@ Values: 'true' or 'false'
 Default Value: 'false'
 
 ### Settings ###
-  ***
+Info: Basic Plugin settings that can be disabled/changed
+***
   #### DownloadDBOnReload ####
-  ***
   Info: Download the database (if MySQL is enabled) on plugin reload  
   Value Type: Boolean  
   Default Value: 'false'
-  
   #### MinimumWords ####
-  ***
   Info: The minimum amount of words a ticket must be to allow submitting  
   Value Type: Integer  
   Default Value: 5
-  
   #### MessageCutOff ####
-  ***
   Info: The maximum characters allowed until a line is cutoff  
   Value Type:
   ```yaml
@@ -41,9 +37,7 @@ Default Value: 'false'
       Max: 32  
       Suffix: '...'
   ```
-  
   #### Importance ####
-  ***
   Info: Enable the importance system?  
   Value Type:   
   ```yaml
@@ -57,10 +51,8 @@ Default Value: 'false'
     Importance:
       Enabled: true
   ```
-  
   #### Rating ####
-  ***
-  Info: Enable the   
+  Info: Enable the Ratings system (Rate how well their service was after a ticket is closed with a resolved message)  
   Value Type:  
   ```yaml
   Settings:
@@ -73,10 +65,8 @@ Default Value: 'false'
     Rating:
       Enabled: true
   ``` 
-  
   #### Filter ####
-  ***
-  Info: Create a filter system to filter any foul language  
+  Info: Create a filter system to filter out foul language  
   Value Type:  
   ```yaml
   Settings:
@@ -100,3 +90,14 @@ Default Value: 'false'
       - stupid
       - crap
   ```
+### Category ###
+Info: Tickets can have a category type to organize situations
+***
+  #### Enabled ####
+  Info: Enable the Categories system
+  Value Type: Boolean
+  Default Value: true
+  #### Categories ####
+  Info: Create a custom category with it's name as the yaml section
+  Value Type: Section List
+  
