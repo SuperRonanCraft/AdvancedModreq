@@ -58,9 +58,9 @@
   Default Value:  
   \- Enabled: true  
   \- Submitting:  
-    \- AllowSubmitting: true  
-    \- Substitute: '******'  
+    \-- AllowSubmitting: true  
+    \-- Substitute: '******'  
   \- Blacklist:  
-    \- dumb  
-    \- stupid  
-    \- crap  
+    \-- dumb  
+    \-- stupid  
+    \-- crap  
