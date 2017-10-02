@@ -29,11 +29,11 @@
   Default Value: 5
   
   #### MessageCutOff ####
-  Info: The maximum characters allowed until a line is cutoff
+  Info: The maximum characters allowed until a line is cutoff  
   Value Type:  
   - Max: Integer  
   - Suffix: String  
-  Default Value:  
+  ..Default Value:..
   - Max: 32  
   - Suffix: '...'  
   
