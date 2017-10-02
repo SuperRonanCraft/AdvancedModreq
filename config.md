@@ -12,24 +12,24 @@
 ### Settings ###
   
   #### DownloadDBOnReload ####
-  Info: Download the database (if MySQL is enabled) on plugin reload  
-  Value Type: Boolean  
-  Default Value: 'false'
+    Info: Download the database (if MySQL is enabled) on plugin reload  
+    Value Type: Boolean  
+    Default Value: 'false'
   
   #### MinimumWords ####
-  Info: The minimum amount of words a ticket must be to allow submitting  
-  Value Type: Integer  
-  Default Value: 5
+    Info: The minimum amount of words a ticket must be to allow submitting  
+    Value Type: Integer  
+    Default Value: 5
   
   #### MessageCutOff ####
-  Info: The maximum characters allowed until a line is cutoff  
-  Value Type:
+    Info: The maximum characters allowed until a line is cutoff  
+    Value Type:
   ```yaml
   MessageCutOff:
     Max: Integer  
     Suffix: String
   ```
-  Default Value: 
+    Default Value: 
   ```yaml 
   MessageCutOff:
     Max: 32  
@@ -37,26 +37,26 @@
   ```
   
   #### Importance ####
-  Info: Enable the importance system?  
-  Value Type:   
+    Info: Enable the importance system?  
+    Value Type:   
   ```yaml
   Importance:
     Enabled: Boolean 
   ```
-  Default Value:  
+    Default Value:  
   ```yaml
   Importance:
     Enabled: true
   ```
   
   #### Rating ####
-  Info: Enable the   
-  Value Type:  
+    Info: Enable the   
+    Value Type:  
   ```yaml
   Rating:
     Enabled: Boolean 
   ```
-  Default Value:  
+    Default Value:  
   ```yaml
   Rating:
     Enabled: true
