@@ -40,16 +40,16 @@
   #### Importance ####
   Info: Enable the importance system?  
   Value Type:   
-  - Enabled: Boolean  
-  Default Value:    
-  - Enabled: true  
+  - Enabled: Boolean -
+  Default Value:  
+  - Enabled: true -
   
   #### Rating ####
   Info: Enable the   
   Value Type:  
-  - Enabled: Boolean
+  - Enabled: Boolean  
   Default Value:  
-  - Enabled: true
+  - Enabled: true  
   
   #### Filter ####
   Info: Create a filter system to filter any foul language  
