@@ -10,25 +10,18 @@
   Default Value: 'false'
 
 ### Settings ###
-  ## Settings Summary ##
-  - [DownloadBDOnReload](#user-content-downloaddbonreload)
-  - [MinimumWords](#user-content-minimumwords)
-  - [MessageCutOff](#user-content-messagecutoff)
-  - [Importance](#user-content-importance)
-  - [Rating](#user-content-rating)
-  - [Filter](#user-content-filter)
   
-  ### DownloadDBOnReload ###
+  #### DownloadDBOnReload ####
   Info: Download the database (if MySQL is enabled) on plugin reload  
   Value Type: Boolean  
   Default Value: 'false'
   
-  ### MinimumWords ###
+  #### MinimumWords ####
   Info: The minimum amount of words a ticket must be to allow submitting  
   Value Type: Integer  
   Default Value: 5
   
-  ### MessageCutOff ###
+  #### MessageCutOff ####
   Info: The maximum characters allowed until a line is cutoff  
   Value Type:
   ```yaml
@@ -43,7 +36,7 @@
     Suffix: '...'
   ```
   
-  ### Importance ###
+  #### Importance ####
   Info: Enable the importance system?  
   Value Type:   
   ```yaml
@@ -56,7 +49,7 @@
     Enabled: true
   ```
   
-  ### Rating ###
+  #### Rating ####
   Info: Enable the   
   Value Type:  
   ```yaml
@@ -69,7 +62,7 @@
     Enabled: true
   ``` 
   
-  ### Filter ###
+  #### Filter ####
   Info: Create a filter system to filter any foul language  
   Value Type:  
   \- Enabled: Boolean  
