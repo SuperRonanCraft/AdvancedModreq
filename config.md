@@ -31,11 +31,11 @@
   #### MessageCutOff ####
   Info: The maximum characters allowed until a line is cutoff  
   Value Type:  
-  - Max: Integer  
-  - Suffix: String  
-  ⋅⋅Default Value:⋅⋅
-  - Max: 32  
-  - Suffix: '...'  
+  \- Max: Integer  
+  \- Suffix: String  
+  Default Value:
+  \- Max: 32  
+  \- Suffix: '...'  
   
   #### Importance ####
   Info: Enable the importance system?  
