@@ -17,46 +17,46 @@
     Default Value: 'false'
   
   #### MinimumWords ####
-    Info: The minimum amount of words a ticket must be to allow submitting  
-    Value Type: Integer  
-    Default Value: 5
+  Info: The minimum amount of words a ticket must be to allow submitting  
+  Value Type: Integer  
+  Default Value: 5
   
   #### MessageCutOff ####
-    Info: The maximum characters allowed until a line is cutoff  
-    Value Type:
-     ```yaml
-     MessageCutOff:
-       Max: Integer  
-       Suffix: String
-     ```
-    Default Value: 
-    ```yaml 
-    MessageCutOff:
-      Max: 32  
-      Suffix: '...'
-    ```
+  Info: The maximum characters allowed until a line is cutoff  
+  Value Type:
+  ```yaml
+  MessageCutOff:
+    Max: Integer  
+    Suffix: String
+  ```
+  Default Value: 
+  ```yaml 
+  MessageCutOff:
+    Max: 32  
+    Suffix: '...'
+  ```
   
   #### Importance ####
-    Info: Enable the importance system?  
-    Value Type:   
+  Info: Enable the importance system?  
+  Value Type:   
   ```yaml
   Importance:
     Enabled: Boolean 
   ```
-    Default Value:  
+  Default Value:  
   ```yaml
   Importance:
     Enabled: true
   ```
   
   #### Rating ####
-    Info: Enable the   
-    Value Type:  
+  Info: Enable the   
+  Value Type:  
   ```yaml
   Rating:
     Enabled: Boolean 
   ```
-    Default Value:  
+  Default Value:  
   ```yaml
   Rating:
     Enabled: true
@@ -65,17 +65,23 @@
   #### Filter ####
   Info: Create a filter system to filter any foul language  
   Value Type:  
-  \- Enabled: Boolean  
-  \- Submitting:  
-    \-- AllowSubmitting: Boolean  
-    \-- Substitute: String  
-  \- Blacklist: List  
-  Default Value:  
-  \- Enabled: true  
-  \- Submitting:  
-    \-- AllowSubmitting: true  
-    \-- Substitute: '******'  
-  \- Blacklist:  
-    \-- dumb  
-    \-- stupid  
-    \-- crap   
+  ```yaml
+  Filter:
+    Enabled: Boolean  
+    Submitting:  
+      AllowSubmitting: Boolean  
+      Substitute: String  
+    Blacklist: List
+  ```
+  Default Value:
+  ```yaml
+  Filter:
+    Enabled: true  
+    Submitting:  
+      AllowSubmitting: true  
+      Substitute: '******'  
+    Blacklist:  
+    - dumb
+    - stupid
+    - crap
+  ```
