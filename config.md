@@ -56,11 +56,11 @@
   Value Type:  
   \- Enabled: Boolean  
   Default Value:  
-  \- Enabled: true
-  \- Submitting:
-   \- AllowSubmitting: true
-   \- Substitute: '******'
-  \- Blacklist:
-   \- dumb
-   \- stupid
-   \- crap
+  \- Enabled: true  
+  \- Submitting:  
+   \- AllowSubmitting: true  
+   \- Substitute: '******'  
+  \- Blacklist:  
+   \- dumb  
+   \- stupid  
+   \- crap  
