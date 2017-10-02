@@ -10,7 +10,7 @@
   Default Value: 'false'
 
 #### Settings ####
-  ### Summary ###
+  #### Settings Summary ####
   - [DownloadBDOnReload](#user-content-downloaddbonreload)
   - [MinimumWords](#user-content-minimumwords)
   - [MessageCutOff](#user-content-messagecutoff)
@@ -31,36 +31,36 @@
   #### MessageCutOff ####
   Info: The maximum characters allowed until a line is cutoff
   Value Type:  
-    - Max: Integer
-    - Suffix: String
+  - Max: Integer  
+  - Suffix: String  
   Default Value:  
-    - Max: 32
-    - Suffix: '...'
+  - Max: 32  
+  - Suffix: '...'  
   
   #### Importance ####
-  Info: Enable the importance system?
+  Info: Enable the importance system?  
   Value Type:   
-    - Enabled: Boolean
-  Default Value:  
-    - Enabled: true
+  - Enabled: Boolean  
+  Default Value:    
+  - Enabled: true  
   
   #### Rating ####
   Info: Enable the   
   Value Type:  
-    - Enabled: Boolean
+  - Enabled: Boolean
   Default Value:  
-    - Enabled: true
+  - Enabled: true
   
   #### Filter ####
   Info: Create a filter system to filter any foul language  
   Value Type:  
-    - Enabled: Boolean
+  - Enabled: Boolean
   Default Value:  
-    - Enabled: true
-    - Submitting:
-      -- AllowSubmitting: true
-      -- Substitute: '***'
-    - Blacklist:
-      -- dumb
-      -- stupid
-      -- crap
+  - Enabled: true
+  - Submitting:
+  -- AllowSubmitting: true
+  -- Substitute: '******'
+  - Blacklist:
+  -- dumb
+  -- stupid
+  -- crap
