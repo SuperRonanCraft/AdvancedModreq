@@ -1,4 +1,5 @@
 # Config #
+### [Default Config File](files/config.yml) ###
 
 ## Summary ##
 - [Disable-Updater](#user-content-disable-updater) 
