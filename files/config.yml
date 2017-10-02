@@ -1,0 +1,67 @@
+```yaml
+# AdvancedModreq plugin by SuperRonanCraft! (Join my Public Server mc.RonanCraft.net) #
+# Please give me credit, I would love to see more discussions on my Spigot page! #
+
+Version: 4.0.4
+Disable-Updater: false
+Settings:
+  DownloadBDOnReload: false
+  MinimumWords: 5
+  MessageCutOff:
+    Max: 32
+    Suffix: '...'
+  Importance:
+    Enabled: true
+  Rating:
+    Enabled: true
+  Filter:
+    Enabled: true
+    Submitting:
+      AllowSubmitting: true
+      Substitute: '***'
+    Blacklist:
+    - dumb
+    - stupid
+    - crap
+Notifications:
+  Closed:
+    Enabled: true
+    Sound: BLOCK_TRIPWIRE_CLICK_ON
+  Opened:
+    Enabled: true
+    Sound: BLOCK_ANVIL_USE
+  New:
+    Enabled: true
+    Sound: BLOCK_NOTE_BASEDRUM
+  Reply:
+    Enabled: true
+    Sound: BLOCK_FIRE_EXTINGUISH
+  Join:
+    Player:
+      Enabled: true
+      Sound: ENTITY_SKELETON_HURT
+    Opened:
+      Enabled: true
+      Sound: ENTITY_PLAYER_LEVELUP
+    Flagged:
+      Enabled: true
+      Sound: BLOCK_ANVIL_BREAK
+Category:
+  Enabled: true
+  Categories:
+    Griefing:
+      Description:
+      - '&6&m------&r &6&lAdvancedModreq &8| &7Categories &6&m------'
+      Item: tnt
+    Other:
+      Description:
+      - '&6Other &f- &7Make a report based off anything else'
+      Item: anvil
+Economy:
+  Enabled: false
+  Price: 25
+Alias:
+  Enabled: true
+  List:
+  - report
+  ```
