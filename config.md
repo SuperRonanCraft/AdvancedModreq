@@ -58,7 +58,7 @@
   \- Submitting:  
     \-- AllowSubmitting: Boolean  
     \-- Substitute: String  
-  \- Blacklist: List
+  \- Blacklist: List  
   Default Value:  
   \- Enabled: true  
   \- Submitting:  
