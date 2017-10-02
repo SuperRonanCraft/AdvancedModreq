@@ -2,8 +2,7 @@
 
 ### Summary ###
 - [Disable-Updater](#user-content-disable-updater)
-- [Shift](#user-content-shift)
-- [Price](#user-content-price)
+- [Settings](#user-content-settings)
 
 #### Disable-Updater ####
   Info: Disable the "update avaiable" if an update is available
@@ -20,43 +19,43 @@
   - [Filter](#user-content-filter)
   
   #### DownloadDBOnReload ####
-  Info: Download the database (if MySQL is enabled) on plugin reload
-  Value Type: Boolean
+  Info: Download the database (if MySQL is enabled) on plugin reload  
+  Value Type: Boolean  
   Default Value: 'false'
   
   #### MinimumWords ####
-  Info: The minimum amount of words a ticket must be to allow submitting
-  Value Type: Integer
+  Info: The minimum amount of words a ticket must be to allow submitting  
+  Value Type: Integer  
   Default Value: 5
   
   #### MessageCutOff ####
   Info: The maximum characters allowed until a line is cutoff
-  Value Type:
+  Value Type:  
     - Max: Integer
     - Suffix: String
-  Default Value:
+  Default Value:  
     - Max: 32
     - Suffix: '...'
   
   #### Importance ####
   Info: Enable the importance system?
-  Value Type: 
+  Value Type:   
     - Enabled: Boolean
-  Default Value:
+  Default Value:  
     - Enabled: true
   
   #### Rating ####
-  Info: Enable the 
-  Value Type:
+  Info: Enable the   
+  Value Type:  
     - Enabled: Boolean
-  Default Value:
+  Default Value:  
     - Enabled: true
   
   #### Filter ####
-  Info: Create a filter system to filter any foul language
-  Value Type:
+  Info: Create a filter system to filter any foul language  
+  Value Type:  
     - Enabled: Boolean
-  Default Value:
+  Default Value:  
     - Enabled: true
     - Submitting:
       -- AllowSubmitting: true
