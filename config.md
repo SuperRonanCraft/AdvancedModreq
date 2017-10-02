@@ -24,17 +24,17 @@
   #### MessageCutOff ####
     Info: The maximum characters allowed until a line is cutoff  
     Value Type:
-  ```yaml
-  MessageCutOff:
-    Max: Integer  
-    Suffix: String
-  ```
+    ```yaml
+    MessageCutOff:
+      Max: Integer  
+      Suffix: String
+    ```
     Default Value: 
-  ```yaml 
-  MessageCutOff:
-    Max: 32  
-    Suffix: '...'
-  ```
+    ```yaml 
+    MessageCutOff:
+      Max: 32  
+      Suffix: '...'
+    ```
   
   #### Importance ####
     Info: Enable the importance system?  
