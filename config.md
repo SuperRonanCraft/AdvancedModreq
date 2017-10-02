@@ -55,6 +55,10 @@
   Info: Create a filter system to filter any foul language  
   Value Type:  
   \- Enabled: Boolean  
+  \- Submitting:  
+    \-- AllowSubmitting: Boolean  
+    \-- Substitute: String  
+  \- Blacklist: List
   Default Value:  
   \- Enabled: true  
   \- Submitting:  
