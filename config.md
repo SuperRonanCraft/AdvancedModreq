@@ -54,13 +54,13 @@
   #### Filter ####
   Info: Create a filter system to filter any foul language  
   Value Type:  
-  - Enabled: Boolean
+  * Enabled: Boolean  
   Default Value:  
   * Enabled: true
   * Submitting:
-  ** AllowSubmitting: true
-  ** Substitute: '******'
+   * AllowSubmitting: true
+   * Substitute: '******'
   * Blacklist:
-  ** dumb
-  ** stupid
-  ** crap
+   * dumb
+   * stupid
+   * crap
