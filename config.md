@@ -129,10 +129,12 @@ Info: Tickets can have a category type to organize situations
       CUSTOMCATEGORYNAME:
         Description: 
         - 'A description of category, viewable with /modreq categories' # Can have multiple lines
+        Importance: 5 ## Optional if you don't want players chosing an importance level for this category!
         Item: 'bedrock' # Any item name
       CUSTOMCATEGORYNAME2:
         Description: 
         - '&aCool Category &7- &fMake a report based off coolness'
+        Importance: 0 ## If an importance level is zero, players can still chose an importance level!
         Item: 'ice'
   ```
 
