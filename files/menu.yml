@@ -1,0 +1,233 @@
+Opened:
+  Title: '&lTickets | Open'
+  Name: '&6&oTicket #%ticket_id%'
+  Lore:
+  - '&8Posted By&7: %ticket_player%'
+  - '&8Message&7: %ticket_msg%'
+  - '&8Status&7: %ticket_status%'
+  - '&8Reply&7: %ticket_status_reply%'
+  # Any line with the "%ticket_importance%" with a ticket with no importance will auto delete!
+  - '&8Importance&7: %ticket_importance%'
+  # Any line with the "%ticket_category%" with a ticket with no category will auto delete!
+  - '&8Category&7: %ticket_category%'
+  - '&8Time&7: %ticket_time%'
+  - ''
+  - '&7Click to manage ticket!'
+  Item: 'paper:0:%ticket_importance%'
+Closed:
+  Title: '&lTickets | Closed'
+  Name: '&6&oTicket #%ticket_id%'
+  Lore:
+  - '&8Posted By&7: %ticket_player%'
+  - '&8Status&7: %ticket_status%'
+  - '&8Reply&7: %ticket_status_reply%'
+  - '&8Importance&7: %ticket_importance%'
+  - '&8Category&7: %ticket_category%'
+  # Any line with the "%ticket_rating%" with a ticket with no rating will auto delete!
+  - '&8Rating&7: %ticket_rating%'
+  # Any line with the "%ticket_resolved_msg%" with a ticket with no resolved message will auto delete!
+  - '&8Resolved&7: %ticket_resolved_msg%'
+  - '&8Time&7: %ticket_time%'
+  - ''
+  - '&7Click to manage ticket!'
+  Item: 'paper:0:%ticket_importance%'
+Status:
+  Title: '&lTickets | Status | %player%'
+  Name: '&6&oTicket #%ticket_id%'
+  Lore:
+  - '&8Status&7: %ticket_status%'
+  - '&8Reply&7: %ticket_status_reply%'
+  - '&8Importance&7: %ticket_importance%'
+  - '&8Rating&7: %ticket_rating%'
+  - '&8Resolved&7: %ticket_resolved_msg%'
+  - '&8Category&7: %ticket_category%'
+  - '&8Time&7: %ticket_time%'
+  - ''
+  # Line contains a conditional placeholder which will only show up if ticket has a reply
+  - '&7Left-Click to view replies!%ticket_status_reply_showline%'
+  # Line contains a conditional placeholder which will only show up if ticket was resolved and allowed to rate
+  - '&7Right-Click to rate!%ticket_rating_rate%'
+  Item:
+    Opened: 'ink_sack:10:%ticket_importance%'
+    Closed: 'ink_sack:8:%ticket_importance%'
+Reply:
+  Title: '&lTickets | Reply'
+  Name: '&6&oTicket #%ticket_id%'
+  Lore:
+  - '&8Replier&7: %ticket_replier%'
+  - '&8Message&7: %ticket_reply_msg%'
+  - '&7Reply posted by author! %ticket_reply_author_showline%'
+  - ''
+  - '&7Click to view full reply!'
+  Item: 'slime_ball'
+Info:
+  Title: '&lTickets | Info'
+  Size: 3
+  Ticket:
+    Name: '&6&oTicket #%ticket_id%'
+    Lore:
+    - '&8Author&7: %ticket_player%'
+    - '&8Message&7: %ticket_msg%'
+    - '&8Time&7: %ticket_time%'
+    - ''
+    - '&7Click to view full message!'
+    Item: 'paper:0:%ticket_importance%'
+    Slot: 5
+  Teleport:
+    Name: '&b&lTeleport'
+    Lore:
+    - '&7Click to teleport to tickets origin'
+    - ''
+    - '&8World&7: %ticket_world%'
+    - '&8Coords&7: x:%ticket_x%, y:%ticket_y% z:%ticket_z%'
+    Item: 'beacon'
+    Slot: 19
+  Reply:
+    Name: '&d&lReply List'
+    Lore:
+    - '&8Replies&7: %ticket_replies%'
+    - '&7Click to view all replies!%ticket_status_reply_showline%'
+    Item: 'book' 
+    Slot: 21
+  Status:
+    Open:
+      Name: '&a&lOpen'
+      Lore:
+      - '&7Click to open ticket!'
+      Item: 'ink_sack:8'
+    Close:
+      Name: '&c&lClose'
+      Lore:
+      - '&7Click to close ticket!'
+      Item: 'ink_sack:10'
+    Slot: 23
+  Flag:
+    Enabled:
+      Name: '&b&lFlag'
+      Lore:
+      - '&7Click to flag ticket #%ticket_id%'
+      - '&7for further investigation'
+      - '&8Will give staff a notification'
+      - '&8whether opened or closed!'
+      Item: 'ink_sack:8'
+    Disabled:
+      Name: '&b&lUn-Flag'
+      Lore:
+      - '&7Click to unflag a ticket'
+      Item: 'ink_sack:10'
+    Slot: 25
+  Cancel:
+    Name: '&c&lCancel'
+    Lore:
+    - '&7Click to cancel ticket actions!'
+    Item: 'barrier' 
+    Slot: 27
+Rating:
+  Title: '&lTickets | Status | Rate'
+  Size: 1
+  1:
+    Name: '%rating_1%'
+    Lore:
+    - '&7Click to rate!'
+    Item: 'coal'
+    Slot: 3
+  2:
+    Name: '%rating_2%'
+    Lore:
+    - '&7Click to rate!'
+    Item: 'iron_ingot'
+    Slot: 4
+  3:
+    Name: '%rating_3%'
+    Lore:
+    - '&7Click to rate!'
+    Item: 'gold_ingot'
+    Slot: 5
+  4:
+    Name: '%rating_4%'
+    Lore:
+    - '&7Click to rate!'
+    Item: 'emerald'
+    Slot: 6
+  5:
+    Name: '%rating_5%'
+    Lore:
+    - '&7Click to rate!'
+    Item: 'diamond'
+    Slot: 7
+General:
+  NextPage:
+    Name: '&6Next Page'
+    Item: 'book'
+    Lore:
+    - '&7Click to go to page #%page%'
+  LastPage:
+    Name: '&6Last Page'
+    Item: 'book'
+    Lore:
+    - '&7Click to go to page #%page%'
+Flagged:
+  # If an item is flagged, should the item be enchanted?
+  Enchant: true
+  Item: 'book:0:%ticket_importance%'
+Importance:
+  Title: '&lTickets | Create | Importance'
+  Size: 1
+  1:
+    Name: '%importance_1%'
+    Lore:
+    - '&7Click to set importance!'
+    Item: 'coal'
+    Slot: 3
+  2:
+    Name: '%importance_2%'
+    Lore:
+    - '&7Click to set importance!'
+    Item: 'iron_ingot'
+    Slot: 4
+  3:
+    Name: '%importance_3%'
+    Lore:
+    - '&7Click to set importance!'
+    Item: 'gold_ingot'
+    Slot: 5
+  4:
+    Name: '%importance_4%'
+    Lore:
+    - '&7Click to set importance!'
+    Item: 'emerald'
+    Slot: 6
+  5:
+    Name: '%importance_5%'
+    Lore:
+    - '&7Click to set importance!'
+    Item: 'diamond'
+    Slot: 7
+Category:
+  Title: '&lTickets | Create | Category'
+  Size: 1
+  Automatic:
+    # If enabled, categories will use the following template to auto create categories
+    Enabled: true
+    Template:
+      Name: '&a%category%'
+      Lore:
+      - ''
+      - '&7Click to choose %category%'
+      - '&7as your ticket category!'
+      # Items are determined by the item you placed under the Category section
+  Manual:
+    # Automatic category creation must be disabled to use the following!
+    # Section name must be the category you have put under "Categories" in the config.yml
+    Griefing:
+      Name: '&c&lGriefing'
+      Lore:
+      - ''
+      - '&7Set ticket category to a grief report!'
+      Slot: 4
+    Other:
+      Name: '&c&lOther'
+      Lore:
+      - ''
+      - '&7Set ticket category to Other!'
+      Slot: 6
