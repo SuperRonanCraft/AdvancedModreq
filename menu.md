@@ -26,9 +26,9 @@ Value Type: String List
 Info: The item that should be generated  
 Value Type: ItemID:*Data*:*Amount*   
 Extra:
- - Get a list of valid item id at [GragamedgeCombe](http://minecraft-ids.grahamedgecombe.com)
+ - Get a list of valid item ids [here](http://minecraft-ids.grahamedgecombe.com)
  - Data and Amount are optional!
- - Date changes the data type, such as orange wool being "wool:1"
+ - Data changes the data type, such as orange wool being "wool:1"
  - Amount can be added without altering the data with a "0" in place for data
  - Some sections allow [custom placeholders](#user-content-custom-placeholder), view available section on the [menu](files/menu.yml) file
 Examples:
