@@ -20,7 +20,7 @@ Info: Basic Plugin settings that can be disabled/changed
   #### DownloadDBOnReload ####
   Info: Download the database (if [MySQL](files/MySQL.yml) is enabled) on plugin reload  
   Value Type: Boolean  
-  Default Value: 'false'
+  Default Value: 'false'  
   #### MinimumWords ####
   Info: The minimum amount of words a ticket must be to allow submitting  
   Value Type: Integer  
@@ -116,12 +116,12 @@ Notifications:
 Info: Tickets can have a category type to organize situations
 ***
   #### Enabled ####
-  Info: Enable the Categories system
-  Value Type: Boolean
+  Info: Enable the Categories system  
+  Value Type: Boolean  
   Default Value: true
   #### Categories ####
-  Info: Create a custom category with it's name as the yaml section
-  Value Type: Section List
+  Info: Create a custom category with it's name as the yaml section  
+  Value Type: Section List  
   Example:
   ```yaml
   Category:
@@ -140,12 +140,12 @@ Info: Tickets can have a category type to organize situations
 Info: Make a ticket cost some cash to create a submission
 ***
   #### Enabled ####
-  Info: Enable the Economy system
-  Value Type: Boolean
+  Info: Enable the Economy system  
+  Value Type: Boolean  
   Default Value: false
   #### Price ####
-  Info: The price of a ticket submission
-  Value Type: Integer
+  Info: The price of a ticket submission  
+  Value Type: Integer  
   Default Value: 25
   
 ### Alias ###
