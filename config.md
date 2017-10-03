@@ -14,7 +14,7 @@ Default Value: 'false'
 Info: Basic Plugin settings that can be disabled/changed
 ***
   #### DownloadDBOnReload ####
-  Info: Download the database (if [MySQL](files/MySQL.md) is enabled) on plugin reload  
+  Info: Download the database (if [MySQL](files/MySQL.yml) is enabled) on plugin reload  
   Value Type: Boolean  
   Default Value: 'false'
   #### MinimumWords ####
