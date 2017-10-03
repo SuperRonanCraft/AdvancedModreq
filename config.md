@@ -95,7 +95,7 @@ Info: Basic Plugin settings that can be disabled/changed
       - crap
   ```
 ### Notifications ###
-Info:
+Info: Enable a notification when the specified ticket event happens, and what sound to play
 ***
 Value Type:
 ```yaml
