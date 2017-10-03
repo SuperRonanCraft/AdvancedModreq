@@ -152,9 +152,9 @@ Info: Make a ticket cost some cash to create a submission
 Info: Alias the command "/modreq create" to just one command and no arguments
 ***
   #### Enabled ####
-  Info: Enable the Categories system
-  Value Type: Boolean
+  Info: Enable the Categories system  
+  Value Type: Boolean  
   Default Value: true
   #### List ####
-  Info: Create a custom category with it's name as the yaml section
+  Info: Create a custom category with it's name as the yaml section  
   Value Type: String List
