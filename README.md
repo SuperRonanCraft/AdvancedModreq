@@ -4,7 +4,7 @@ Here is list of pages to help you out:
   - [Permissions](permissions.yml): View a list of all permissions in the plugin
   - [Placeholders](placeholders.md): View all placeholders AdvancedModreq adds if PlaceholderAPI is installed
   - [Menu](menu.md): Learn how to not break the menu file :D
-  - [MySQL](files/mysql.yml): Connect and manipulate more data with a MySQL connection!
+  - [MySQL](files/MySQL.yml): Connect and manipulate more data with a MySQL connection!
   - [Messages](files/messages.yml): View all the available messages you can alter!
 
 Thank you for viewing the Wiki for [AdvancedModreq](https://www.spigotmc.org/resources/40528/)
