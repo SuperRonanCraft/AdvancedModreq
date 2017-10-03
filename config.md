@@ -3,10 +3,14 @@
 ## Summary ##
 - [Disable-Updater](#user-content-disable-updater) 
 - [Settings](#user-content-settings)
+- [Notifications](#user-content-notifications)
+- [Category](#user-content-category)
+- [Economy](#user-content-economy)
+- [Alias](#user-content-alias)
 
 ### Disable-Updater ###
-***
 Info: Disable the "update avaiable" if an update is available  
+***
 Values: 'true' or 'false'  
 Default Value: 'false'
 
@@ -90,6 +94,24 @@ Info: Basic Plugin settings that can be disabled/changed
       - stupid
       - crap
   ```
+### Notifications ###
+Info:
+***
+Value Type:
+```yaml
+Notifications:
+  <Type>:
+    Enabled: Boolean
+    Sound: Sound
+```
+Default Value:
+```yaml
+Notifications:
+  <Type>:
+    Enabled: true
+    Sound: 'Any sound at https://www.spigotmc.org/wiki/cc-sounds-list/'
+```
+
 ### Category ###
 Info: Tickets can have a category type to organize situations
 ***
@@ -100,4 +122,39 @@ Info: Tickets can have a category type to organize situations
   #### Categories ####
   Info: Create a custom category with it's name as the yaml section
   Value Type: Section List
+  Example:
+  ```yaml
+  Category:
+    Categories:
+      CUSTOMCATEGORYNAME:
+        Description: 
+        - 'A description of category, viewable with /modreq categories' # Can have multiple lines
+        Item: 'bedrock' # Any item name
+      CUSTOMCATEGORYNAME2:
+        Description: 
+        - '&aCool Category &7- &fMake a report based off coolness'
+        Item: 'ice'
+  ```
+
+### Economy ###
+Info: Make a ticket cost some cash to create a submission
+***
+  #### Enabled ####
+  Info: Enable the Economy system
+  Value Type: Boolean
+  Default Value: false
+  #### Price ####
+  Info: The price of a ticket submission
+  Value Type: Integer
+  Default Value: 25
   
+### Alias ###
+Info: Alias the command "/modreq create" to just one command and no arguments
+***
+  #### Enabled ####
+  Info: Enable the Categories system
+  Value Type: Boolean
+  Default Value: true
+  #### List ####
+  Info: Create a custom category with it's name as the yaml section
+  Value Type: String List
