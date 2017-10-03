@@ -14,4 +14,4 @@
 - #### %advancedmodreq_total_closed%  
   Amount of closed tickets!
 - #### %advancedmodreq_total_closed_player%  
-  Amount of closed personal tickets!
+  Amount of closed personal tickets! 
