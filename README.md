@@ -9,4 +9,4 @@ Here is list of pages to help you out:
 
 Thank you for viewing the Wiki for [AdvancedModreq](https://www.spigotmc.org/resources/40528/)
 
-### Did this wiki help you out? Please give it a ***Star*** so I know it's getting use! ###
+#### Did this wiki help you out? Please give it a ***Star*** so I know it's getting use! ####
