@@ -2,7 +2,8 @@
 ### [PlaceholderAPI](https://www.spigotmc.org/resources/6245/) required! ###
 ***
 #### %advancedmodreq_total% ####
-  Amount of tickets in total, no matter their status!
+  Amount of tickets in total, no matter their status!  
+  
 #### %advancedmodreq_total_player% 
   Amount of personal tickets in total, no matter their status!
 #### %advancedmodreq_total_flagged%
