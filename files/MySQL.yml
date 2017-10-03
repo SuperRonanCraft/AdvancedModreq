@@ -1,0 +1,21 @@
+MySQL:
+  enabled: false
+  host: 'localhost'
+  port: 3306
+  database: 'root'
+  tablePrefix: 'AM_'
+  username: 'root'
+  password: 'password'
+Timer:
+  enabled: false
+  ##Amount of time (in minutes) to sync the database (best for multiple servers) 0 will be defaulted to 5!
+  time: 5
+Purge:
+  enabled: false
+  ## Amount of days old a ticket has to be to delete the ticket
+  days: 7
+  ## Amount of time (in hours) to automatically purge outdated tickets
+  time: 12
+  ## Delete a ticket even if it's still open?
+  deleteOpened: false
+  deleteFlagged: false
