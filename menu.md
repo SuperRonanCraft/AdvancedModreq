@@ -11,21 +11,20 @@
 - [Placeholders](#user-content-placeholders)
 
 #### Title ####
-Info: The title of the inventory an item will be generated in
+Info: The title of the inventory an item will be generated in  
 Value Type: String
 
 #### Name ####
-Info: The name an item will have, with an optional %ticket_id% placeholder in most places
-Value Type: String
-Extra:
+Info: The name an item will have, with an optional %ticket_id% placeholder in most places  
+Value Type: String  
 
 #### Lore ####
-Info: A list of strings displaying unique information per ticket/menu
+Info: A list of strings displaying unique information per ticket and/or menu  
 Value Type: String List
 
 #### Item ####
-Info: The item that should be generated
-Value Type: ItemID:<Data>:<Amount>
+Info: The item that should be generated  
+Value Type: ItemID:*Data*:*Amount*   
 Extra:
  - Get a list of valid item id at [GragamedgeCombe](http://minecraft-ids.grahamedgecombe.com)
  - Data and Amount are optional!
@@ -46,7 +45,7 @@ Info: Placeholders that are based off the [messages.yml](files/messages.yml#user
 Info: A [custom placeholder](#user-content-custom-placeholder) that will delete the line it's on if it returns a null or zero
 
 #### Placeholders ####
-Info: Every placeholder available, to view where each are valid, look at the default [menu.yml](files/menu.yml) file!
+Info: Every placeholder available, to view where each are valid, look at the default [menu.yml](files/menu.yml) file!  
 Placeholders:
  - %ticket_id%: Displays the ticket id the generated item is displaying
  - %ticket_player%: Displays the owner the ticket belongs to
