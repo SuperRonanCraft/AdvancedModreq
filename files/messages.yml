@@ -1,18 +1,18 @@
 Messages:
   Prefix: '&7[&6&lAdvancedModreq&7] '
+  Error: '%prefix%&cError! &7Please advise an Admin that something went wrong!' ## Added in 4.1.1
   ErrorID: '%prefix%&cError! Invalid Ticket id #%ticket_id%'
   Reload: '%prefix%&aConfig reloaded!'
   Invalid: '%prefix%&cInvalid argument! Try &7/%command% help'
   NoPermission: '%prefix%&cSorry! &7You don''t have permission to do this!' 
   TooShort: '%prefix%&cSorry! Your request must be longer than %amount% words!'
-  Importance: '%prefix%&7Please add an integer at the beginning of your message ranging from 1-5 with how important your report is!'
-  Category: '%prefix%&7Please type in the category you wish to submit your report in! &fType &6/modreq categories &fto view all categories!'
   Rating:
     NotResolved: '%prefix%&cError! &7This ticket is not yet resolved!'
     Error: '%prefix%&cError! &7Please use an integer ranging from 1-5! &81 being low, 5 being high!'
     Feedback: '%prefix%&7Ticket #%ticket_id% rated %ticket_rating%&7! &fThank you for your feedback!'
     Join: '%prefix%&7You seem to have %ticket_amount% resolved ticket(s), mind adding a rating to your experience? &8Use "/modreq status" for more!'
     Rated: '%prefix%&cSorry! &7Ratings have been locked for ticket #%ticket_id%!'
+    Belong: '%prefix%&cWhoops! &7Looks like this ticket doesn''t belong to you! &fTry another ticket!' ## Added in 4.1.1
   Create:
     Success:
       Normal: '%prefix%&aSuccessfully opened a ticket with id &e#%ticket_id%'
@@ -105,6 +105,8 @@ Help:
   - '&6/%command% close <ticketID> [message] &f- &7Close an open ticket with an optional resolved message'
   Teleport:
   - '&6/%command% tp <ticketID> &f- &7Teleport to a tickets original position'
+  View: ## Added in 4.1.1
+  - '&6/%command% view <ticketID> &f- &7View a ticket directly'
   Rate:
   - '&6/%command% rate <ticketID> <1-5> &f- &7Rate a ticket off of your experience if it was resolved'
   Flag:
@@ -123,6 +125,7 @@ Usage:
   Close: '%prefix%&7Usage: &6/%command% close <ticketID>'
   Open: '%prefix%&7Usage: &6/%command% open <ticketID>'
   Teleport: '%prefix%&7Usage: &6/%command% tp <ticketID>'
+  View: '%prefix%&7Usage: &6/%command% view <ticketID>' ## Added in 4.1.1
   Rate: '%prefix%&7Usage: &6/%command% rate <ticketID> <1-5>'
   Flag: '%prefix%&7Usage: &6/%command% flag <ticketID>'
   Reply: '%prefix%&7Usage: &6/%command% reply <ticketID> [message]'
