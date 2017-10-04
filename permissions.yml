@@ -19,10 +19,11 @@ advancedmodreq.*:
             advancedmodreq.tickets.flag: true
             advancedmodreq.tickets.status.other: true
             advancedmodreq.tickets.delete: true
-    advancedmodreq.tickets.list.*:
+    advancedmodreq.tickets.view.*: ## Changed from "list" to "view" in 4.1.1
         children:
-            advancedmodreq.tickets.list.opened: true
-            advancedmodreq.tickets.list.closed: true
+            advancedmodreq.tickets.view: true
+            advancedmodreq.tickets.view.opened: true ## Changed from "list" to "view" in 4.1.1
+            advancedmodreq.tickets.view.closed: true ## Changed from "list" to "view" in 4.1.1
     advancedmodreq.purge.*:
         children:
             advancedmodreq.purge.opened: true
@@ -62,10 +63,12 @@ advancedmodreq.*:
         description: Close a ticket
     advancedmodreq.tickets.tp:
         description: Teleport to a tickets original location
-    advancedmodreq.tickets.list.opened:
-        description: List all open tickets
-    advancedmodreq.tickets.list.closed:
-        description: List all closed tickets
+    advancedmodreq.tickets.view: ## Added in 4.1.1
+        description: View an open or closed ticket if allowed to view them
+    advancedmodreq.tickets.view.opened: ## Changed from "list" to "view" in 4.1.1
+        description: View all open tickets
+    advancedmodreq.tickets.view.closed: ## Changed from "list" to "view" in 4.1.1
+        description: View all closed tickets
     advancedmodreq.tickets.delete:
         description: Delete a ticket
     advancedmodreq.purge.opened:
