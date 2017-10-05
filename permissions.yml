@@ -84,4 +84,4 @@ advancedmodreq.*:
     advancedmodreq.updater:
         description: Get notification if there is an update for AdvancedModreq
     advancedmodreq.importance.*
-        description: Be able to rate any importance level, use \#'s (1-5) instead of '*' for an allowed value! (Must add one for each)
+        description: Be able to rate any importance level, use #'s (1-5) instead of '*' for an allowed value! (Must add one for each)
