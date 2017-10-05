@@ -1,0 +1,136 @@
+Messages:
+  Prefix: '&7[&6&lAdvancedModreq&7] '
+  Error: '%prefix%&cError! &7Please advise an Admin that something went wrong!'
+  ErrorID: '%prefix%&cError! Invalid Ticket id #%ticket_id%'
+  Reload: '%prefix%&aConfig reloaded!'
+  Invalid: '%prefix%&cInvalid argument! Try &7/%command% help'
+  NoPermission: '%prefix%&cSorry! &7You don''t have permission to do this!' 
+  TooShort: '%prefix%&cSorry! Your request must be longer than %amount% words!'
+  Rating:
+    NotResolved: '%prefix%&cError! &7This ticket is not yet resolved!'
+    Error: '%prefix%&cError! &7Please use an integer ranging from 1-5! &81 being low, 5 being high!'
+    Feedback: '%prefix%&7Ticket #%ticket_id% rated %ticket_rating%&7! &fThank you for your feedback!'
+    Join: '%prefix%&7You seem to have %ticket_amount% resolved ticket(s), mind adding a rating to your experience? &8Use "/modreq status" for more!'
+    Rated: '%prefix%&cSorry! &7Ratings have been locked for ticket #%ticket_id%!'
+    Belong: '%prefix%&cWhoops! &7Looks like this ticket doesn''t belong to you! &fTry another ticket!'
+  Create:
+    Success:
+      Normal: '%prefix%&aSuccessfully opened a ticket with id &e#%ticket_id%'
+      Price: '%prefix%&aSuccessfully opened a ticket with id &e#%ticket_id% &afor &f$%price%'
+    Failed:
+      Filter: '%prefix%&cWhoops! Looks like the word %ticket_blacklisted% is not allowed!'
+      Price: '%prefix%&cLooks like you don''t have enough money to create a ticket! &7You must have at least &e$%price%&7!'
+      Importance: 
+        Normal: '%prefix%&7Please select an importance level for your ticket to submit!'
+        Permission: '%prefix%&cWhoops! &7Looks like you are not allowed to select an importance level of %ticket_importance%'
+      Category: '%prefix%&7Please select a category to submit your ticket!'
+  Teleport: '%prefix%&7Teleported the ticket #%ticket_id% processed by %player%'
+  View: '%prefix%&aTicket #%ticket_id% from %ticket_player%&7: %ticket_msg%'
+  Purge:
+    Opened: '%prefix%&aPurged %ticket_amount% open tickets!'
+    Closed: '%prefix%&aPurged %ticket_amount% closed tickets!'
+    All: '%prefix%&aPurged all %ticket_amount% tickets!'
+    Single: '%prefix%&aDeleted ticket #%ticket_id%!'
+  Reply:
+    Success: '%prefix%&aSuccess! Your reply was submitted to ticket #%ticket_id%'
+    NoReplies: '%prefix%&cSorry, there seems to be no replies for the ticket #%ticket_id%!'
+    View: '%prefix%&7Reply from ticket #%ticket_id%, replied by %ticket_replier%: &c%ticket_reply%'
+  Notifications:
+    New: '%prefix%&7A new ticket has been created by %player% with the ticket #%ticket_id% with an importance level of %ticket_importance%&7!'
+    Reply: '%prefix%&eA new reply has been posted on your ticket #%ticket_id% by %ticket_replier%'
+    Opened: '%prefix%&eYour ticket #%ticket_id% was reopened for further investigation!'
+    Closed:
+      Normal: '%prefix%&cYour ticket #%ticket_id% was closed by %ticket_closer%!'
+      Message: '%prefix%&cYour ticket #%ticket_id% was closed by %ticket_closer% with the message&7: %ticket_closed_msg%!'
+    Join:
+      Player: '%prefix%&eThere are new updates on %ticket_amount% ticket(s)!'
+      Opened: '%prefix%&eThere are currently %ticket_amount% ticket(s) open for investigation!'
+      Flagged: '%prefix%&cThere are currently %ticket_amount% ticket(s) flagged for mandatory service!'
+  Opened:
+    Success: '%prefix%&aTicket #%ticket_id% was reopened!'
+    Failed: '%prefix%&dTicket #%ticket_id% is already open!'
+  Closed:
+    Success: '%prefix%&cTicket #%ticket_id% was closed!'
+    Failed: '%prefix%&dTicket #%ticket_id% is already closed!'
+  Flagged:
+    Enabled: '%prefix%&eTicket #%ticket_id% was &aflagged&e for mandatory service!'
+    Disabled: '%prefix%&eTicket #%ticket_id% was &cunflagged&e!'
+  List:
+    Opened:
+      Success: '%prefix%&aCurrent there are %ticket_amount% open ticket(s) with the id''s&7: %ticket_list%'
+      Failed: '%prefix%&eThere are currently no open tickets!'
+    Closed:
+      Success: '%prefix%&aCurrent there are %ticket_amount% closed ticket(s) with the id''s&7: %ticket_list%'
+      Failed: '%prefix%&eThere are currently no closed tickets!'
+
+Placeholders:
+  ## For more time formats, go here: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+  Time: 'MM/dd/yyyy hh:mm:ss aa'
+  ## Replaces the translation for the %ticket_status_open%
+  Status:
+    Opened: '&a&lOpen'
+    Closed: '&c&lClosed'
+  ## Replaces the translation for the %ticket_status_reply%
+  Reply:
+    Replied: '&a&lTrue'
+    NoReply: '&c&lFalse'
+  Importance:
+    1: '&a✖'
+    2: '&b✖✖'
+    3: '&e✖✖✖'
+    4: '&c✖✖✖✖'
+    5: '&5✖✖✖✖✖'
+  Rating:
+    1: '&5✖'
+    2: '&c✖✖'
+    3: '&e✖✖✖'
+    4: '&b✖✖✖✖'
+    5: '&a✖✖✖✖✖'
+
+Help:
+  Use:
+  - '&6&m------&r &6&lAdvancedModreq &8| &7Help &6&m------'
+  - '&6/%command% help &f- &7Shows help list'
+  Create:
+  - '&6/%command% create <message> &f- &7Opens a ticket'
+  Status:
+  - '&6/%command% status &f- &7View your ticket status'''
+  Replies:
+  - '&6/%command% replies <ticketID> &f- &7View all replies for a ticket'
+  Categories:
+  - '&6/%command% categories &f- &7View all available categories'
+  List:
+  - '&6/%command% list [open/close] [chat] &f- &7View all open/closed tickets, optionally in chat &8Default: open'
+  Open:
+  - '&6/%command% open <ticketID> &f- &7Open a closed ticket'
+  Close:
+  - '&6/%command% close <ticketID> [message] &f- &7Close an open ticket with an optional resolved message'
+  Teleport:
+  - '&6/%command% tp <ticketID> &f- &7Teleport to a tickets original position'
+  View:
+  - '&6/%command% view <ticketID> &f- &7View a ticket directly'
+  Rate:
+  - '&6/%command% rate <ticketID> <1-5> &f- &7Rate a ticket off of your experience if it was resolved'
+  Flag:
+  - '&6/%command% flag <ticketID> &f- &7Flag/unFlag a ticket to notify staff of this ticket whether opened or closed!'
+  Reply:
+  - '&6/%command% reply <ticketID> <message> &f- &7Reply to an open ticket'
+  Delete:
+  - '&6/%command% delete <ticketID> &f- &7Delete a ticket'
+  Purge:
+  - '&6/%command% purge <open/closed/all> &f- &7Purges tickets with the following status'
+  Reload:
+  - '&6/%command% reload &f- &7Reloads the plugin'
+
+Usage:
+  Create: '%prefix%&7Usage: &6/%command% create <message>'
+  Close: '%prefix%&7Usage: &6/%command% close <ticketID>'
+  Open: '%prefix%&7Usage: &6/%command% open <ticketID>'
+  Teleport: '%prefix%&7Usage: &6/%command% tp <ticketID>'
+  View: '%prefix%&7Usage: &6/%command% view <ticketID>'
+  Rate: '%prefix%&7Usage: &6/%command% rate <ticketID> <1-5>'
+  Flag: '%prefix%&7Usage: &6/%command% flag <ticketID>'
+  Reply: '%prefix%&7Usage: &6/%command% reply <ticketID> [message]'
+  Replies: '%prefix%&7Usage: &6/%command% replies <ticketID>'
+  Delete: '%prefix%&7Usage: &6/%command% delete <ticketID>'
+  Purge: '%prefix%&7Usage: &6/%command% purge <open/closed/all>'
