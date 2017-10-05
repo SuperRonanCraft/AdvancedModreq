@@ -56,5 +56,5 @@ Placeholders:
  - %ticket_category%: Shows a [deletable placeholder](#user-content-deletable-placeholder) of the tickets category
  - %ticket_time%: Shows a [custom placeholder](#user-content-custom-placeholder) of the tickets creation date
  - %ticket_resolved_msg%: Shows a [deletable placeholder](#user-content-deletable-placeholder) if the ticket was resolved when it was closed
- - {perm:<NODE>,<NODE2>}: Make a line have a permission needed to show the line, for multiple seperate each with a comma
+ - {perm:<NODE>,<NODE2>}: Make a line have a permission needed to show the line, for multiple nodes, seperate each with a comma, use a '-' in front of a node to do the opposite action
  
