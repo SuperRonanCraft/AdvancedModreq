@@ -177,30 +177,45 @@ Importance:
     Name: '%importance_1%'
     Lore:
     - '&7Click to set importance!'
+    - ''
+    - '&fAllowed&7: &a&lTrue{perm:advancedmodreq.importance.1}' # If the player has this permission, the line will be shown
+    - '&fAllowed&7: &c&lFalse{perm:-advancedmodreq.importance.1}' # If the player does NOT have this permission, the line will be shown
     Item: 'coal'
     Slot: 3
   2:
     Name: '%importance_2%'
     Lore:
     - '&7Click to set importance!'
+    - ''
+    - '&fAllowed&7: &a&lTrue{perm:advancedmodreq.importance.2}'
+    - '&fAllowed&7: &c&lFalse{perm:-advancedmodreq.importance.2}'
     Item: 'iron_ingot'
     Slot: 4
   3:
     Name: '%importance_3%'
     Lore:
     - '&7Click to set importance!'
+    - ''
+    - '&fAllowed&7: &a&lTrue{perm:advancedmodreq.importance.3}'
+    - '&fAllowed&7: &c&lFalse{perm:-advancedmodreq.importance.3}'
     Item: 'gold_ingot'
     Slot: 5
   4:
     Name: '%importance_4%'
     Lore:
     - '&7Click to set importance!'
+    - ''
+    - '&fAllowed&7: &a&lTrue{perm:advancedmodreq.importance.4}'
+    - '&fAllowed&7: &c&lFalse{perm:-advancedmodreq.importance.4}'
     Item: 'emerald'
     Slot: 6
   5:
     Name: '%importance_5%'
     Lore:
     - '&7Click to set importance!'
+    - ''
+    - '&fAllowed&7: &a&lTrue{perm:advancedmodreq.importance.5}'
+    - '&fAllowed&7: &c&lFalse{perm:-advancedmodreq.importance.5}'
     Item: 'diamond'
     Slot: 7
 Category:
