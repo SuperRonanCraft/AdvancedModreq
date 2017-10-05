@@ -1,7 +1,7 @@
 # AdvancedModreq plugin by SuperRonanCraft! (Join my Public Server mc.RonanCraft.net) #
 # Please give me credit, I would love to see more discussions on my Spigot page! #
 
-Version: 4.1.0
+Version: 4.1.1
 Disable-Updater: false
 Settings:
   DownloadBDOnReload: false
@@ -13,6 +13,7 @@ Settings:
     Enabled: true # Importance level system when creating a ticket
   Rating:
     Enabled: true # Rate a ticket after it's closed
+    AllowNotResolved: false # Allow rating a closed ticket even if the ticket has no resolved message
   Filter:
     Enabled: true
     Submitting:
