@@ -83,5 +83,21 @@ advancedmodreq.*:
         description: Reload plugin
     advancedmodreq.updater:
         description: Get notification if there is an update for AdvancedModreq
-    advancedmodreq.importance.*: # Use advancedmodreq.importance.<1-5> for specific values
+    advancedmodreq.importance.*:
         description: Be able to rate any importance level, use #'s (1-5) instead of '*' for an allowed value! (Must add one for each)
+        children:
+            advancedmodreq.importance.1: true
+            advancedmodreq.importance.2: true
+            advancedmodreq.importance.3: true
+            advancedmodreq.importance.4: true
+            advancedmodreq.importance.5: true
+    advancedmodreq.importance.1:
+        description: Ability to make a level 1 ticket
+    advancedmodreq.importance.2:
+        description: Ability to make a level 2 ticket
+    advancedmodreq.importance.3:
+        description: Ability to make a level 3 ticket
+    advancedmodreq.importance.4:
+        description: Ability to make a level 4 ticket
+    advancedmodreq.importance.5:
+        description: Ability to make a level 5 ticket
