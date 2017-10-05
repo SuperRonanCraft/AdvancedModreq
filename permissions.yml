@@ -22,8 +22,8 @@ advancedmodreq.*:
     advancedmodreq.tickets.view.*: ## Changed from "list" to "view" in 4.1.1
         children:
             advancedmodreq.tickets.view: true
-            advancedmodreq.tickets.view.opened: true ## Changed from "list" to "view" in 4.1.1
-            advancedmodreq.tickets.view.closed: true ## Changed from "list" to "view" in 4.1.1
+            advancedmodreq.tickets.view.opened: true
+            advancedmodreq.tickets.view.closed: true
     advancedmodreq.purge.*:
         children:
             advancedmodreq.purge.opened: true
@@ -65,9 +65,9 @@ advancedmodreq.*:
         description: Teleport to a tickets original location
     advancedmodreq.tickets.view: ## Added in 4.1.1
         description: View an open or closed ticket if allowed to view them
-    advancedmodreq.tickets.view.opened: ## Changed from "list" to "view" in 4.1.1
+    advancedmodreq.tickets.view.opened:
         description: View all open tickets
-    advancedmodreq.tickets.view.closed: ## Changed from "list" to "view" in 4.1.1
+    advancedmodreq.tickets.view.closed:
         description: View all closed tickets
     advancedmodreq.tickets.delete:
         description: Delete a ticket
@@ -83,3 +83,5 @@ advancedmodreq.*:
         description: Reload plugin
     advancedmodreq.updater:
         description: Get notification if there is an update for AdvancedModreq
+    advancedmodreq.importance.*
+        description: Be able to rate any importance level, use \#'s (1-5) instead of '*' for an allowed value! (Must add one for each)
