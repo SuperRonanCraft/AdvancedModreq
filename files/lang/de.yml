@@ -1,0 +1,145 @@
+##
+## Deutsche Übersetzung/German translation
+##
+## Original von/by SuperRonanCraft
+## Übersetzt von/Translated by: Andre_601
+##
+## Besuche das Wiki für weitere Infos/Visit the wiki for more infos:
+## https://github.com/SuperRonanCraft/AdvancedModreq
+##
+Messages:
+  Prefix: '&7[&6&lAdvancedModreq&7] '
+  Error: '%prefix%&cError! &7Bitte melde einem Admin, dass was schiefgelaufen ist!'
+  ErrorID: '%prefix%&cError! Ungültige Ticket id #%ticket_id%'
+  Reload: '%prefix%&aConfig neu geladen!'
+  Invalid: '%prefix%&cUngültiges Argument! Versuch &7/%command% help'
+  NoPermission: '%prefix%&cSorry! &7Du hast keine Rechte dafür!' 
+  TooShort: '%prefix%&cSorry! Dein Gesuch muss mindestens %amount% Wörter haben!'
+  Rating:
+    NotResolved: '%prefix%&cError! &7Dieses Ticket ist noch nicht gelöst!'
+    Error: '%prefix%&cError! &7Bitte nutze eine Zahl von 1-5. 1 ist niedrig, 5 ist hoch!'
+    Feedback: '%prefix%&7Ticket #%ticket_id% mit %ticket_rating%&7 bewertet! &fDanke für dein Feedback!'
+    Join: '%prefix%&7Du scheinst %ticket_amount% gelöste(s) Ticket(s) zu haben. Möchtest du vielleicht eine Bewertung geben? &8Nutze "/modreq status" für mehr!'
+    Rated: '%prefix%&cSorry! &7Bewertungen für Ticket #%ticket_id% wurden geschlossen!'
+    Belong: '%prefix%&cUuuups! &7Sieht so aus, als ob dieses Ticket nicht zu dir gehört! &fVersuch ein anderes!'
+  Create:
+    Success:
+      Normal: '%prefix%&aTicket mit id &e#%ticket_id% &aerfolgreich erstellt!'
+      Price: '%prefix%&aTicket mit id &e#%ticket_id% &afür &f$%price% &aerfolgreich erstellt!'
+    Failed:
+      Filter: '%prefix%&cUuuups! Sieht so aus, als ob das Wort %ticket_blacklisted% nicht erlaubt wäre!'
+      Price: '%prefix%&cEs scheint so, als ob du nicht genug Geld zum erstellen eines Tickets hast! &7Du brauchst mindestens &e$%price%&7!'
+      Importance: 
+        Normal: '%prefix%&7Bitte wähle eine wichtigkeit, um dein Ticket zu senden!'
+        Permission: '%prefix%&cUuuups! &7Sieht so aus, als ob du keine Rechte hast, eine wichtigkeit von %ticket_importance% zu wählen!'
+      Category: '%prefix%&7Bitte wähle eine Kategorie, um dein Ticket zu senden!'
+  Teleport: '%prefix%&7Teleportiert zu Ticket id #%ticket_id%, erstellt von %player%'
+  View: '%prefix%&aTicket #%ticket_id% von %ticket_player%&7: %ticket_msg%'
+  Purge:
+    Opened: '%prefix%&a%ticket_amount% offene Tickets entfernt!'
+    Closed: '%prefix%&a%ticket_amount% geschlossene Tickets entfernt!'
+    All: '%prefix%&aAlle %ticket_amount% Tickets entfernt!'
+    Single: '%prefix%&aTicket #%ticket_id% gelöscht!'
+  Reply:
+    Success: '%prefix%&aErfolg! Deine Antwort auf das Ticket #%ticket_id% wurde gespeichert'
+    NoReplies: '%prefix%&cSorry, aber es scheint keine Antworten für das Ticket #%ticket_id% zu geben!'
+    View: '%prefix%&7Antwort in Ticket #%ticket_id%, beantwortet von %ticket_replier%: &c%ticket_reply%'
+  Notifications:
+    New: '%prefix%&7Ein neues Ticket mit der id #%ticket_id% und der wichtigkeit %ticket_importance%&7 wurde von %player% erstellt!'
+    Reply: '%prefix%&e%ticket_replier% hat auf dein Ticket #%ticket_id% geantwortet'
+    Opened: '%prefix%&eDein Ticket #%ticket_id% wurde für weitere Untersuchungen wieder geöffnet!'
+    Closed:
+      Normal: '%prefix%&cDein Ticket #%ticket_id% wurde von %ticket_closer% geschlossen!'
+      Message: '%prefix%&cDein Ticket #%ticket_id% wurde von %ticket_closer% mit folgender Nachricht geschlossen&7: %ticket_closed_msg%!'
+    Join:
+      Player: '%prefix%&eEs gibt neue Updates in %ticket_amount% Ticket(s)!'
+      Opened: '%prefix%&eEs gibt gerade %ticket_amount% offene(s) Ticket(s) zum untersuchen!'
+      Flagged: '%prefix%&cEs gibt gerade %ticket_amount% Ticket(s) welche(r) als dringend markiert ist/sind!'
+  Opened:
+    Success: '%prefix%&aTicket #%ticket_id% wurde wieder geöffnet!'
+    Failed: '%prefix%&dTicket #%ticket_id% ist bereits offen!'
+  Closed:
+    Success: '%prefix%&cTicket #%ticket_id% wurde geschlossen!'
+    Failed: '%prefix%&dTicket #%ticket_id% ist bereits geschlossen!'
+  Flagged:
+    Enabled: '%prefix%&eTicket #%ticket_id% wurde als wichtig &amarkiert&e!'
+    Disabled: '%prefix%&cMarkierung &eals wichtig, wurde von Ticket #%ticket_id% entfernt!'
+  List:
+    Opened:
+      Success: '%prefix%&aEs gibt gerade %ticket_amount% offene(s) Ticket(s) mit der/den id(s)&7: %ticket_list%'
+      Failed: '%prefix%&eEs gibt gerade keine offenen Tickets!'
+    Closed:
+      Success: '%prefix%&aEs gibt gerade %ticket_amount% geschlossene(s) Ticket(s) mit der/den id(s)&7: %ticket_list%'
+      Failed: '%prefix%&eEs gibt gerade keine geschlossenen Tickets!'
+
+Placeholders:
+  ## Für weitere Zeitformate, besuche: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+  Time: 'MM/dd/yyyy hh:mm:ss aa'
+  ## Ersetzt die Übersetzung für %ticket_status_open%
+  Status:
+    Opened: '&a&lOffen'
+    Closed: '&c&lGeschlossen'
+  ## Ersetzt die Übersetzung für %ticket_status_reply%
+  Reply:
+    Replied: '&a&lJa'
+    NoReply: '&c&lNein'
+  Importance:
+    1: '&a✖'
+    2: '&b✖✖'
+    3: '&e✖✖✖'
+    4: '&c✖✖✖✖'
+    5: '&5✖✖✖✖✖'
+  Rating:
+    1: '&5✖'
+    2: '&c✖✖'
+    3: '&e✖✖✖'
+    4: '&b✖✖✖✖'
+    5: '&a✖✖✖✖✖'
+
+Help:
+  Use:
+  - '&6&m------&r &6&lAdvancedModreq &8| &7Help &6&m------'
+  - '&6/%command% help &f- &7Zeigt die Hilfe-Seite'
+  Create:
+  - '&6/%command% create <message> &f- &7Erstellt ein Ticket'
+  Status:
+  - '&6/%command% status &f- &7Zeigt dein Ticket-Status'
+  Replies:
+  - '&6/%command% replies <ticketID> &f- &7Zeigt alle Antworten eines Tickets'
+  Categories:
+  - '&6/%command% categories &f- &7Zeigt alle verfügbaren Kategorien'
+  List:
+  - '&6/%command% list [open/close] [chat] &f- &7Zeigt alle offenen/geschlossenen Tickets, optional im Chat &8Standart: open'
+  Open:
+  - '&6/%command% open <ticketID> &f- &7Öffnet ein geschlossenes Ticket'
+  Close:
+  - '&6/%command% close <ticketID> [Nachricht] &f- &7Schliesst ein offenes Ticket mit einer optionalen Nachricht'
+  Teleport:
+  - '&6/%command% tp <ticketID> &f- &7Teleportiert zur originalen Position des Tickets'
+  View:
+  - '&6/%command% view <ticketID> &f- &7Zeigt ein Ticket direkt'
+  Rate:
+  - '&6/%command% rate <ticketID> <1-5> &f- &7Bewertet ein Ticket nach deiner Erfahrung, wenn es gelöst wurde'
+  Flag:
+  - '&6/%command% flag <ticketID> &f- &(Un)Markiert ein Ticket, um Team-Mitgliedern mitzuteilen, wenn es geöffnet/geschlossen wird!'
+  Reply:
+  - '&6/%command% reply <ticketID> <Nachricht> &f- &7Antworte auf ein offenes Ticket'
+  Delete:
+  - '&6/%command% delete <ticketID> &f- &7Lösche ein Ticket'
+  Purge:
+  - '&6/%command% purge <open/closed/all> &f- &7Entfernt Tickets mit dem angegebenen Status'
+  Reload:
+  - '&6/%command% reload &f- &7Lädt das Plugin neu'
+
+Usage:
+  Create: '%prefix%&7Verwendung: &6/%command% create <Nachricht>'
+  Close: '%prefix%&7Verwendung: &6/%command% close <ticketID>'
+  Open: '%prefix%&7Verwendung: &6/%command% open <ticketID>'
+  Teleport: '%prefix%&7Verwendung: &6/%command% tp <ticketID>'
+  View: '%prefix%&7Verwendung: &6/%command% view <ticketID>'
+  Rate: '%prefix%&7Verwendung: &6/%command% rate <ticketID> <1-5>'
+  Flag: '%prefix%&7Verwendung: &6/%command% flag <ticketID>'
+  Reply: '%prefix%&7Verwendung: &6/%command% reply <ticketID> [Nachricht]'
+  Replies: '%prefix%&7Verwendung: &6/%command% replies <ticketID>'
+  Delete: '%prefix%&7Verwendung: &6/%command% delete <ticketID>'
+  Purge: '%prefix%&7Verwendung: &6/%command% purge <open/closed/all>'
