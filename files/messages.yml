@@ -20,7 +20,9 @@ Messages:
     Failed:
       Filter: '%prefix%&cWhoops! Looks like the word %ticket_blacklisted% is not allowed!'
       Price: '%prefix%&cLooks like you don''t have enough money to create a ticket! &7You must have at least &e$%price%&7!'
-      Importance: '%prefix%&7Please select an importance level for your ticket to submit!'
+      Importance: 
+        Normal: '%prefix%&7Please select an importance level for your ticket to submit!'
+        Permission: '%prefix%&cWhoops! &7Looks like you are not allowed to select an importance level of %ticket_importance%'
       Category: '%prefix%&7Please select a category to submit your ticket!'
   Teleport: '%prefix%&7Teleported the ticket #%ticket_id% processed by %player%'
   View: '%prefix%&aTicket #%ticket_id% from %ticket_player%&7: %ticket_msg%'
