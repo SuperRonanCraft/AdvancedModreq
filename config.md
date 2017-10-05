@@ -61,13 +61,15 @@ Info: Basic Plugin settings that can be disabled/changed
   ```yaml
   Settings:
     Rating:
-      Enabled: Boolean 
+      Enabled: Boolean
+      AllowNotResolved: Boolean
   ```
   Default Value:  
   ```yaml
   Settings:
     Rating:
       Enabled: true
+      AllowNotResolved: false
   ``` 
   #### Filter ####
   Info: Create a filter system to filter out foul language  
