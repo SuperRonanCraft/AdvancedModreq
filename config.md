@@ -1,18 +1,25 @@
 # Config ([View Default Config File](files/config.yml))
 ***
 ## Summary ##
-- [Disable-Updater](#user-content-disable-updater) 
-- [Settings](#user-content-settings)
-- [Notifications](#user-content-notifications)
-- [Category](#user-content-category)
-- [Economy](#user-content-economy)
-- [Alias](#user-content-alias)
+- [Disable-Updater](#disable-updater)
+- [Language-File](#language-file)
+- [Settings](#settings)
+- [Notifications](#notifications)
+- [Category](#category)
+- [Economy](#economy)
+- [Alias](#alias)
 
 ### Disable-Updater ###
 Info: Disable the "update avaiable" if an update is available  
 ***
-Values: 'true' or 'false'  
+Value Type: Boolean 
 Default Value: 'false'
+
+### Language-File ###
+Info: Set the language, accessible at the [lang](files/lang) file  
+***
+Values: String  
+Default Value: 'en.yml'
 
 ### Settings ###
 Info: Basic Plugin settings that can be disabled/changed
