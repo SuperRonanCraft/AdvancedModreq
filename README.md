@@ -5,7 +5,7 @@ Here is list of pages to help you out:
   - [Placeholders](placeholders.md): View all placeholders AdvancedModreq adds if PlaceholderAPI is installed
   - [Menu](menu.md): Learn how to not break the menu file :D
   - [MySQL](files/MySQL.yml): Connect and manipulate more data with a MySQL connection!
-  - [Messages](files/messages.yml): View all the available messages you can alter!
+  - [Language](files): View all available languages! Help us translate to other languages!
 
 Thank you for viewing the Wiki for [AdvancedModreq](https://www.spigotmc.org/resources/40528)
 
