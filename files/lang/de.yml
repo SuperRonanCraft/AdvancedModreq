@@ -142,4 +142,4 @@ Usage:
   Reply: '%prefix%&7Verwendung: &6/%command% reply <ticketID> [Nachricht]'
   Replies: '%prefix%&7Verwendung: &6/%command% replies <ticketID>'
   Delete: '%prefix%&7Verwendung: &6/%command% delete <ticketID>'
-  Purge: '%prefix%&7Verwendung: &6/%command% purge <open/closed/all>'
+  Purge: '%prefix%&7Verwendung: &6/%command% purge <open/closed/all>' 
