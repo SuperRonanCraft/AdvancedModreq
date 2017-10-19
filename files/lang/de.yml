@@ -71,6 +71,9 @@ Messages:
     Closed:
       Success: '%prefix%&aEs gibt gerade %ticket_amount% geschlossene(s) Ticket(s) mit der/den id(s)&7: %ticket_list%'
       Failed: '%prefix%&eEs gibt gerade keine geschlossenen Tickets!'
+  Claim:
+    Success: '%prefix%&aErfolg! &7Du hast dieses Ticket übernommen. Verhindere das verändern von anderen Moderatoren!!'
+    Failed: '%prefix%&cSorry! &7Sieht so aus, als ob &f%player%&7 dieses Ticket übernommen hat, weswegen du es nicht ändern kannst!'
 
 Placeholders:
   ## Für weitere Zeitformate, besuche: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
