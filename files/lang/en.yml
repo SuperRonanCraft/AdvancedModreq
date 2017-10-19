@@ -62,6 +62,9 @@ Messages:
     Closed:
       Success: '%prefix%&aCurrent there are %ticket_amount% closed ticket(s) with the id''s&7: %ticket_list%'
       Failed: '%prefix%&eThere are currently no closed tickets!'
+  Claim:
+    Success: '%prefix%&aSuccess! &7You have claimed this ticket, disallowing other moderators from altering it!!'
+    Failed: '%prefix%&cSorry! &7Seems like &f%player%&7 has claimed this ticket, removing the ability for you to alter it!'
 
 Placeholders:
   ## For more time formats, go here: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
