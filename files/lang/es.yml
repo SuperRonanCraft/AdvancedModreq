@@ -62,6 +62,9 @@ Messages:
     Closed:
       Success: '%prefix%&aActualmente hay %ticket_amount% entrada(s) cerrado con el numero&7: %ticket_list%'
       Failed: '%prefix%&eThere are currently no closed tickets!'
+  Claim:
+    Success: '%prefix%&aExito! &7Has reclamado este boleto, sin permitir que otros moderadores lo alteren!'
+    Failed: '%prefix%&c¡Lo siento!&7 Parece que %player% ha reclamado este boleto, eliminando la capacidad de alterarlo!'
 
 Placeholders:
   ## Para más formatos de tiempo, vaya aquí: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
