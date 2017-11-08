@@ -74,6 +74,8 @@ Messages:
   Claim:
     Success: '%prefix%&aErfolg! &7Du hast dieses Ticket übernommen. Verhindere das verändern von anderen Moderatoren!!'
     Failed: '%prefix%&cSorry! &7Sieht so aus, als ob &f%player%&7 dieses Ticket übernommen hat, weswegen du es nicht ändern kannst!'
+    Locked: '%prefix%&cWhoops! &7Looks like another moderator beat you to it! &fYou are not able to alter this ticket any longer!'
+    Already: '%prefix%&bWoah! &7Looks like you have already claimed ticket #%ticket_id%!'
 
 Placeholders:
   ## Für weitere Zeitformate, besuche: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
@@ -133,6 +135,8 @@ Help:
   - '&6/%command% purge <open/closed/all> &f- &7Entfernt Tickets mit dem angegebenen Status'
   Reload:
   - '&6/%command% reload &f- &7Lädt das Plugin neu'
+  Claim: 
+  - '&6/%command% claim &f- &7Claim a ticket to service'
 
 Usage:
   Create: '%prefix%&7Verwendung: &6/%command% create <Nachricht>'
@@ -146,3 +150,4 @@ Usage:
   Replies: '%prefix%&7Verwendung: &6/%command% replies <ticketID>'
   Delete: '%prefix%&7Verwendung: &6/%command% delete <ticketID>'
   Purge: '%prefix%&7Verwendung: &6/%command% purge <open/closed/all>' 
+  Claim: '%prefix%&7Usage: &6/%command% claim <ticketID>'
