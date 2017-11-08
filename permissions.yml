@@ -1,8 +1,9 @@
-advancedmodreq.*:
+    advancedmodreq.*:
         children:
             advancedmodreq.use: true
             advancedmodreq.reload: true
             advancedmodreq.tickets.*: true
+            advancedmodreq.tickets.claim.override
             advancedmodreq.purge.*: true
             advancedmodreq.notifications.*: true
             advancedmodreq.updater: true
@@ -16,10 +17,12 @@ advancedmodreq.*:
             advancedmodreq.tickets.open: true
             advancedmodreq.tickets.close: true
             advancedmodreq.tickets.tp: true
+            advancedmodreq.tickets.view: true
             advancedmodreq.tickets.flag: true
             advancedmodreq.tickets.status.other: true
             advancedmodreq.tickets.delete: true
-    advancedmodreq.tickets.view.*: ## Changed from "list" to "view" in 4.1.1
+            advancedmodreq.tickets.claim: true
+    advancedmodreq.tickets.view.*:
         children:
             advancedmodreq.tickets.view: true
             advancedmodreq.tickets.view.opened: true
@@ -43,6 +46,10 @@ advancedmodreq.*:
     advancedmodreq.use:
         description: Use plugin
         default: true
+    advancedmodreq.tickets.claim:
+        description: Claim a ticket, disallowing others from altering it
+    advancedmodreq.tickets.claim.override:
+        description: Alter a ticket even if it's claimed
     advancedmodreq.tickets.create:
         description: Make a ticket request
         default: true
@@ -63,7 +70,7 @@ advancedmodreq.*:
         description: Close a ticket
     advancedmodreq.tickets.tp:
         description: Teleport to a tickets original location
-    advancedmodreq.tickets.view: ## Added in 4.1.1
+    advancedmodreq.tickets.view:
         description: View an open or closed ticket if allowed to view them
     advancedmodreq.tickets.view.opened:
         description: View all open tickets
