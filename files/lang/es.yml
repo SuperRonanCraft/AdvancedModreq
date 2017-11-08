@@ -65,6 +65,8 @@ Messages:
   Claim:
     Success: '%prefix%&aExito! &7Has reclamado este boleto, sin permitir que otros moderadores lo alteren!'
     Failed: '%prefix%&c¡Lo siento!&7 Parece que %player% ha reclamado este boleto, eliminando la capacidad de alterarlo!'
+    Locked: '%prefix%&cDesculpa. &7Se parece que otro moderador te gano! &fTu no pueder cambiar el estado de este boleto!'
+    Already: '%prefix%&bEspera! &7Se parece que ya tu reclamaste el boleto #%ticket_id%!'
 
 Placeholders:
   ## Para más formatos de tiempo, vaya aquí: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
@@ -124,6 +126,8 @@ Help:
   - '&6/%command% purge <open/closed/all> &f- &7Purga boletos con el siguiente estado'
   Reload:
   - '&6/%command% reload &f- &7Recarga el complemento'
+  Claim: 
+  - '&6/%command% claim &f- &7Tomar un boleto para servicio'
 
 Usage:
   Create: '%prefix%&7Uso: &6/%command% create <message>'
@@ -137,3 +141,4 @@ Usage:
   Replies: '%prefix%&7Uso: &6/%command% replies <ticketID>'
   Delete: '%prefix%&7Uso: &6/%command% delete <ticketID>'
   Purge: '%prefix%&7Uso: &6/%command% purge <open/closed/all>'
+  Claim: '%prefix%&7Usage: &6/%command% claim <ticketID>'
