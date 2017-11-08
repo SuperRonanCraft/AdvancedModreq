@@ -49,7 +49,7 @@
     advancedmodreq.tickets.claim:
         description: Claim a ticket, disallowing others from altering it
     advancedmodreq.tickets.claim.override:
-        description: Alter a ticket even if it's claimed
+        description: Claim an already claimed ticket
     advancedmodreq.tickets.create:
         description: Make a ticket request
         default: true
