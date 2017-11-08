@@ -11,6 +11,7 @@ Opened:
   # Any line with the "%ticket_category%" with a ticket with no category will auto delete!
   - '&8Category&7: %ticket_category%'
   - '&8Time&7: %ticket_time%'
+  - '&8ClaimedBy&7: &c%ticket_claimedby%'
   - ''
   - '&7Click to manage ticket!'
   Item: 'paper:0:%ticket_importance%'
@@ -28,6 +29,7 @@ Closed:
   # Any line with the "%ticket_resolved_msg%" with a ticket with no resolved message will auto delete!
   - '&8Resolved&7: %ticket_resolved_msg%'
   - '&8Time&7: %ticket_time%'
+  - '&8ClaimedBy&7: &c%ticket_claimedby%'
   - ''
   - '&7Click to manage ticket!'
   Item: 'paper:0:%ticket_importance%'
@@ -42,6 +44,7 @@ Status:
   - '&8Resolved&7: %ticket_resolved_msg%'
   - '&8Category&7: %ticket_category%'
   - '&8Time&7: %ticket_time%'
+  - '&8ClaimedBy&7: &c%ticket_claimedby%'
   - ''
   # Line contains a conditional placeholder which will only show up if ticket has a reply
   - '&7Left-Click to view replies!%ticket_status_reply_showline%'
@@ -69,6 +72,7 @@ Info:
     - '&8Author&7: %ticket_player%'
     - '&8Message&7: %ticket_msg%'
     - '&8Time&7: %ticket_time%'
+    - '&8ClaimedBy&7: &c%ticket_claimedby%'
     - ''
     - '&7Click to view full message!'
     Item: 'paper:0:%ticket_importance%'
@@ -178,8 +182,8 @@ Importance:
     Lore:
     - '&7Click to set importance!'
     - ''
-    - '&fAllowed&7: &a&lTrue{perm:advancedmodreq.importance.1}' # If the player has this permission, the line will be shown
-    - '&fAllowed&7: &c&lFalse{perm:-advancedmodreq.importance.1}' # If the player does NOT have this permission, the line will be shown
+    - '&fAllowed&7: &a&lTrue{perm:advancedmodreq.importance.1}'
+    - '&fAllowed&7: &c&lFalse{perm:-advancedmodreq.importance.1}'
     Item: 'coal'
     Slot: 3
   2:
