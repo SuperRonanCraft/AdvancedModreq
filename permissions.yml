@@ -3,7 +3,7 @@
             advancedmodreq.use: true
             advancedmodreq.reload: true
             advancedmodreq.tickets.*: true
-            advancedmodreq.tickets.claim.override
+            advancedmodreq.tickets.claim.override: true
             advancedmodreq.purge.*: true
             advancedmodreq.notifications.*: true
             advancedmodreq.updater: true
