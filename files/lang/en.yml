@@ -130,6 +130,7 @@ Help:
   - '&6/%command% claim &f- &7Claim a ticket to service'
 
 Usage:
+  Report: '%prefix%&7Usage: &6/%command% <message>'
   Create: '%prefix%&7Usage: &6/%command% create <message>'
   Close: '%prefix%&7Usage: &6/%command% close <ticketID>'
   Open: '%prefix%&7Usage: &6/%command% open <ticketID>'
