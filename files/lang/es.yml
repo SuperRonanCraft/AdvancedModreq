@@ -130,14 +130,15 @@ Help:
   - '&6/%command% claim &f- &7Tomar un boleto para servicio'
 
 Usage:
-  Create: '%prefix%&7Uso: &6/%command% create <message>'
+  Report: '%prefix%&7Uso: &6/%command% <mensaje>'
+  Create: '%prefix%&7Uso: &6/%command% create <mensaje>'
   Close: '%prefix%&7Uso: &6/%command% close <ticketID>'
   Open: '%prefix%&7Uso: &6/%command% open <ticketID>'
   Teleport: '%prefix%&7Uso: &6/%command% tp <ticketID>'
   View: '%prefix%&7Uso: &6/%command% view <ticketID>'
   Rate: '%prefix%&7Uso: &6/%command% rate <ticketID> <1-5>'
   Flag: '%prefix%&7Uso: &6/%command% flag <ticketID>'
-  Reply: '%prefix%&7Uso: &6/%command% reply <ticketID> [message]'
+  Reply: '%prefix%&7Uso: &6/%command% reply <ticketID> [mensaje]'
   Replies: '%prefix%&7Uso: &6/%command% replies <ticketID>'
   Delete: '%prefix%&7Uso: &6/%command% delete <ticketID>'
   Purge: '%prefix%&7Uso: &6/%command% purge <open/closed/all>'
