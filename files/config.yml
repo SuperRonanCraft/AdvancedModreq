@@ -1,69 +1,91 @@
 # AdvancedModreq plugin by SuperRonanCraft! (Join my Public Server mc.RonanCraft.net) #
 # Please give me credit, I would love to see more discussions on my Spigot page! #
 
-Version: 4.3.0
-Language-File: 'en.yml' ## Added in 4.3.0
+# Set to true if you would like to remove the update message.
 Disable-Updater: false
+
+Language-File: 'en.yml'
+
 Settings:
+  ## Re-load the database/tickets on every reload? "false" by default as large databases can cause lag!
   DownloadBDOnReload: false
-  MinimumWords: 5 # Minimum amount of words a ticket must be to submit
+  MinimumWords: 5
+  # How many characters should we cut off the messages in the "%ticket_msg%" of the "%ticket_resolved_msg%" placeholders
   MessageCutOff:
     Max: 32
     Suffix: '...'
   Importance:
-    Enabled: true # Importance level system when creating a ticket
+    Enabled: true
   Rating:
-    Enabled: true # Rate a ticket after it's closed
-    AllowNotResolved: false # Allow rating a closed ticket even if the ticket has no resolved message
+    Enabled: true
+    AllowNotResolved: false # Be able to rate closed tickets even if they we're not resolved
   Filter:
     Enabled: true
     Submitting:
+      # Allow submitting even with blacklisted words? Will replace words with the substitute
       AllowSubmitting: true
       Substitute: '***'
+    # List off all blacklisted words
     Blacklist:
-    - dumb
-    - stupid
-    - crap
+    - 'dumb'
+    - 'stupid'
+    - 'crap'
+      
 Notifications:
+  ## Notification when a ticket is closed and the player is online
   Closed:
     Enabled: true
-    Sound: BLOCK_TRIPWIRE_CLICK_ON
+    ## More sounds at https://www.spigotmc.org/wiki/cc-sounds-list/
+    ## Set sound to "'null'" if you don't want sounds!
+    Sound: 'BLOCK_TRIPWIRE_CLICK_ON'
+  ## Notification when a ticket is reopened and the player is online
   Opened:
     Enabled: true
-    Sound: BLOCK_ANVIL_USE
+    Sound: 'BLOCK_ANVIL_USE'
+  ## Notification when a ticket is created and a staff member is online
   New:
     Enabled: true
-    Sound: BLOCK_NOTE_BASEDRUM
+    Sound: 'BLOCK_NOTE_BASEDRUM'
+  ## Notification when a ticket is replied to and the player is online
   Reply:
     Enabled: true
-    Sound: BLOCK_FIRE_EXTINGUISH
+    Sound: 'BLOCK_FIRE_EXTINGUISH'
   Join:
+    ## Notification if one of their tickets was replied, closed or resolved and if 
+    ## they have the permission "advancedmodreq.notifications.player"
     Player:
       Enabled: true
-      Sound: ENTITY_SKELETON_HURT
+      Sound: 'ENTITY_SKELETON_HURT'
+    ## Notification if any tickets are open, if the player has the permission "advancedmodreq.notifiations.opened"
     Opened:
       Enabled: true
-      Sound: ENTITY_PLAYER_LEVELUP
+      Sound: 'ENTITY_PLAYER_LEVELUP'
     Flagged:
       Enabled: true
-      Sound: BLOCK_ANVIL_BREAK
+      Sound: 'BLOCK_ANVIL_BREAK'
+  Claim:
+    Enabled: true
+    Sound: 'BLOCK_TRIPWIRE_CLICK_OFF'
+  Rated:
+    Enabled: true
+    Sound: 'BLOCK_ANVIL_USE'
+
 Category:
   Enabled: true
   Categories:
+    ## Add your own custom Categories!
     Griefing:
+      ## Description is the list that pops up when typing "/modreq categories" (Disabled if categories are disabled)
       Description:
       - '&6&m------&r &6&lAdvancedModreq &8| &7Categories &6&m------'
       Importance: 5 ## Overrides importance, not allowing players to chose importance!
-      Item: tnt
+      Item: 'tnt'
     Other:
       Description:
       - '&6Other &f- &7Make a report based off anything else'
       Importance: 0 ## Players can still chose an importance level!
-      Item: anvil
+      Item: 'anvil'
+
 Economy:
   Enabled: false
   Price: 25
-Alias:
-  Enabled: true
-  List:
-  - report

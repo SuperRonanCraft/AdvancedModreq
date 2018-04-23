@@ -1,3 +1,4 @@
+# Español
 Messages:
   Prefix: '&7[&6&lAdvancedModreq&7] '
   Error: '%prefix%&cError! &7Porfavor aconseja un Admin que algo mal paso!'
@@ -24,7 +25,7 @@ Messages:
         Normal: '%prefix%&7Por favor, seleccione un nivel de importancia para su boleto para enviar!'
         Permission: '%prefix%&c¡Vaya! &7Les parece que no se le permite seleccionar un nivel de importancia de %ticket_importance%'
       Category: '%prefix%&7Por favor, seleccione una categoría para enviar su billete!'
-  Teleport: '%prefix%&7Teleportado el boleto #%ticket_id% procesado por %player%'
+  Teleport: '%prefix%&7Teleportado el boleto #%ticket_id% procesado por %ticket_player%'
   View: '%prefix%&aBoleto #%ticket_id% desde %ticket_player%&7: %ticket_msg%'
   Purge:
     Opened: '%prefix%&a¡Purgó %ticket_amount% entradas abiertas!'
@@ -36,7 +37,7 @@ Messages:
     NoReplies: '%prefix%&cLo sentimos, parece que no hay respuestas para el boleto #%ticket_id%!'
     View: '%prefix%&7Respuesta del boleto #%ticket_id%, respondió por %ticket_replier%: &c%ticket_reply%'
   Notifications:
-    New: '%prefix%&7Un nuevo boleto ha sido creado por %player% con el boleto #%ticket_id% con un nivel de importancia de %ticket_importance%&7!'
+    New: '%prefix%&7Un nuevo boleto ha sido creado por %ticket_player% con el boleto #%ticket_id% con un nivel de importancia de %ticket_importance%&7!'
     Reply: '%prefix%&eSe ha publicado una nueva respuesta en su boleto #%ticket_id% por %ticket_replier%'
     Opened: '%prefix%&eSu boleto #%ticket_id% fue reabierto para una investigación más profunda!'
     Closed:
@@ -63,7 +64,8 @@ Messages:
       Success: '%prefix%&aActualmente hay %ticket_amount% entrada(s) cerrado con el numero&7: %ticket_list%'
       Failed: '%prefix%&eThere are currently no closed tickets!'
   Claim:
-    Success: '%prefix%&aExito! &7Has reclamado este boleto, sin permitir que otros moderadores lo alteren!'
+    Broadcast: '%prefix%&f%ticket_claimedby% a reclamado el boleto #%ticket_id%!'
+    Success: '%prefix%&aExito! &7%ticket_claimedby% a reclamado el boleto #%ticket_id%, sin permitir que otros moderadores lo alteren!'
     Failed: '%prefix%&c¡Lo siento!&7 Parece que %player% ha reclamado este boleto, eliminando la capacidad de alterarlo!'
     Locked: '%prefix%&cDesculpa. &7Se parece que otro moderador te gano! &fTu no pueder cambiar el estado de este boleto!'
     Already: '%prefix%&bEspera! &7Se parece que ya tu reclamaste el boleto #%ticket_id%!'
@@ -130,7 +132,7 @@ Help:
   - '&6/%command% claim &f- &7Tomar un boleto para servicio'
 
 Usage:
-  Report: '%prefix%&7Uso: &6/%command% <mensaje>'
+  Report: '%prefix%&7Usage: &6/%command% <mensaje>'
   Create: '%prefix%&7Uso: &6/%command% create <mensaje>'
   Close: '%prefix%&7Uso: &6/%command% close <ticketID>'
   Open: '%prefix%&7Uso: &6/%command% open <ticketID>'

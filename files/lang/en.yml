@@ -36,7 +36,7 @@ Messages:
     NoReplies: '%prefix%&cSorry, there seems to be no replies for the ticket #%ticket_id%!'
     View: '%prefix%&7Reply from ticket #%ticket_id%, replied by %ticket_replier%: &c%ticket_reply%'
   Notifications:
-    New: '%prefix%&7A new ticket has been created by %player% with the ticket #%ticket_id% with an importance level of %ticket_importance%&7!'
+    New: '%prefix%&7A new ticket has been created by %ticket_player% with the ticket #%ticket_id% with an importance level of %ticket_importance%&7!'
     Reply: '%prefix%&eA new reply has been posted on your ticket #%ticket_id% by %ticket_replier%'
     Opened: '%prefix%&eYour ticket #%ticket_id% was reopened for further investigation!'
     Closed:
@@ -63,8 +63,9 @@ Messages:
       Success: '%prefix%&aCurrent there are %ticket_amount% closed ticket(s) with the id''s&7: %ticket_list%'
       Failed: '%prefix%&eThere are currently no closed tickets!'
   Claim:
-    Success: '%prefix%&aSuccess! &7You have claimed this ticket, disallowing other moderators from altering it!!'
-    Failed: '%prefix%&cSorry! &7Seems like &f%player%&7 has claimed this ticket, removing the ability for you to alter it!'
+    Broadcast: '%prefix%&f%ticket_claimedby% has claimed ticket #%ticket_id%!'
+    Success: '%prefix%&aSuccess! &7You have claimed the ticket %ticket_id%, disallowing other moderators from altering it!!'
+    Failed: '%prefix%&cSorry! &7Seems like &f%ticket_claimedby%&7 has claimed this ticket, removing the ability for you to alter it!'
     Locked: '%prefix%&cWhoops! &7Looks like another moderator beat you to it! &fYou are not able to alter this ticket any longer!'
     Already: '%prefix%&bWoah! &7Looks like you have already claimed ticket #%ticket_id%!'
 

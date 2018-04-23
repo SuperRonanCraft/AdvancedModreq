@@ -1,7 +1,6 @@
 ##
 ## Deutsche Übersetzung/German translation
 ##
-## Original von/by SuperRonanCraft
 ## Übersetzt von/Translated by: Andre_601
 ##
 ## Besuche das Wiki für weitere Infos/Visit the wiki for more infos:
@@ -45,7 +44,7 @@ Messages:
     NoReplies: '%prefix%&cSorry, aber es scheint keine Antworten für das Ticket #%ticket_id% zu geben!'
     View: '%prefix%&7Antwort in Ticket #%ticket_id%, beantwortet von %ticket_replier%: &c%ticket_reply%'
   Notifications:
-    New: '%prefix%&7Ein neues Ticket mit der id #%ticket_id% und der wichtigkeit %ticket_importance%&7 wurde von %player% erstellt!'
+    New: '%prefix%&7Ein neues Ticket mit der id #%ticket_id% und der wichtigkeit %ticket_importance%&7 wurde von %ticket_player% erstellt!'
     Reply: '%prefix%&e%ticket_replier% hat auf dein Ticket #%ticket_id% geantwortet'
     Opened: '%prefix%&eDein Ticket #%ticket_id% wurde für weitere Untersuchungen wieder geöffnet!'
     Closed:
@@ -72,8 +71,9 @@ Messages:
       Success: '%prefix%&aEs gibt gerade %ticket_amount% geschlossene(s) Ticket(s) mit der/den id(s)&7: %ticket_list%'
       Failed: '%prefix%&eEs gibt gerade keine geschlossenen Tickets!'
   Claim:
-    Success: '%prefix%&aErfolg! &7Du hast dieses Ticket übernommen. Verhindere das verändern von anderen Moderatoren!!'
-    Failed: '%prefix%&cSorry! &7Sieht so aus, als ob &f%player%&7 dieses Ticket übernommen hat, weswegen du es nicht ändern kannst!'
+    Broadcast: '%prefix%&f%ticket_claimedby% has claimed ticket #%ticket_id%!'
+    Success: '%prefix%&aSuccess! &7You have claimed this ticket, disallowing other moderators from altering it!!'
+    Failed: '%prefix%&cSorry! &7Seems like &f%player%&7 has claimed this ticket, removing the ability for you to alter it!'
     Locked: '%prefix%&cWhoops! &7Looks like another moderator beat you to it! &fYou are not able to alter this ticket any longer!'
     Already: '%prefix%&bWoah! &7Looks like you have already claimed ticket #%ticket_id%!'
 
@@ -150,5 +150,5 @@ Usage:
   Reply: '%prefix%&7Verwendung: &6/%command% reply <ticketID> [Nachricht]'
   Replies: '%prefix%&7Verwendung: &6/%command% replies <ticketID>'
   Delete: '%prefix%&7Verwendung: &6/%command% delete <ticketID>'
-  Purge: '%prefix%&7Verwendung: &6/%command% purge <open/closed/all>' 
+  Purge: '%prefix%&7Verwendung: &6/%command% purge <open/closed/all>'
   Claim: '%prefix%&7Usage: &6/%command% claim <ticketID>'

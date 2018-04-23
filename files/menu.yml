@@ -65,7 +65,7 @@ Reply:
   Item: 'slime_ball'
 Info:
   Title: '&lTickets | Info'
-  Size: 3
+  Size: 4
   Ticket:
     Name: '&6&oTicket #%ticket_id%'
     Lore:
@@ -126,6 +126,16 @@ Info:
     - '&7Click to cancel ticket actions!'
     Item: 'barrier' 
     Slot: 27
+  Resolve:
+    Name: '&d&lResolve'
+    Lore:
+    - '&7Click to have a command suggested in chat!'
+    - ''
+    - '&7Once clicked, click on the message in chat'
+    - '&7to have a command suggested to you!'
+    Item: 'redstone'
+    Chat-Json: ''
+    Slot: 31
 Rating:
   Title: '&lTickets | Status | Rate'
   Size: 1
