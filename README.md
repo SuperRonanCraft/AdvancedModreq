@@ -1,4 +1,6 @@
-# Welcome to AdvancedModreq's repository! #
+<p align="center">
+  <b><a>Welcome to AdvancedModreq's repository!</a></b>
+</p>
 
 ## Wheres the Wiki?
 The wiki is available [here](https://github.com/SuperRonanCraft/AdvancedModreq/wiki)!
