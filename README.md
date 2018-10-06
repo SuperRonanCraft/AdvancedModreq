@@ -1,15 +1,7 @@
-# Welcome to AdvancedModreq's  repository! #
+# Welcome to AdvancedModreq's repository! #
 
 ## Wheres the Wiki?
 The wiki is available [here](https://github.com/SuperRonanCraft/AdvancedModreq/wiki)!
-
-## Files
-Here's a list of available default files the plugin comes with
-- [Config](files/config.yml)
-- [Discord](files/discord.yml)
-- [Menu](files/menu.yml)
-- [MySQL](files/mysql.yml)
-- [Timers](files/timers.yml)   
     
 <p align="center">
   <b><i><a href="https://github.com/SuperRonanCraft/AdvancedModreq/issues">If you have a suggestion, please make an issue!</a></i></b></p>
