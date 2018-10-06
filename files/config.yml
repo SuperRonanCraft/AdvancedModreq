@@ -7,8 +7,6 @@ Disable-Updater: false
 Language-File: 'en.yml'
 
 Settings:
-  ## Re-load the database/tickets on every reload? "false" by default as large databases can cause lag!
-  DownloadBDOnReload: false
   MinimumWords: 5
   # How many characters should we cut off the messages in the "%ticket_msg%" of the "%ticket_resolved_msg%" placeholders
   MessageCutOff:
@@ -73,18 +71,19 @@ Notifications:
 Category:
   Enabled: true
   Categories:
-    ## Add your own custom Categories!
-    Griefing:
+    ## Add your own custom CategoriesInv!
+    - Griefing:
       ## Description is the list that pops up when typing "/modreq categories" (Disabled if categories are disabled)
-      Description:
-      - '&6&m------&r &6&lAdvancedModreq &8| &7Categories &6&m------'
-      Importance: 5 ## Overrides importance, not allowing players to chose importance!
-      Item: 'tnt'
-    Other:
-      Description:
-      - '&6Other &f- &7Make a report based off anything else'
-      Importance: 0 ## Players can still chose an importance level!
-      Item: 'anvil'
+        Description:
+        - '&6&m------&r &6&lAdvancedModreq &8| &7Categories &6&m------'
+        - '&6Griefing &f- &7Make a report based off a grief you''ve witnessed'
+        Importance: 5 ## Overrides importance, not allowing players to chose importance!
+        Item: 'tnt'
+    - Other:
+        Description:
+        - '&6Other &f- &7Make a report based off anything else'
+        Importance: 0 ## Players can still chose an importance level!
+        Item: 'anvil'
 
 Economy:
   Enabled: false

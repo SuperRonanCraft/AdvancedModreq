@@ -1,38 +1,41 @@
-Opened:
-  Title: '&lTickets | Open'
-  Name: '&6&oTicket #%ticket_id%'
+List:
+  Title:
+    Opened: '&lTickets | Opened'
+    Closed: '&lTickets | Closed'
+    All: '&lTickets | All'
+    Flagged: '&lTickets | Flagged'
+  Name:
+    Normal: '&6&oTicket #%ticket_id%'
+    Flagged: '&e&oTicket #%ticket_id%'
+  Item:
+    Normal: 'paper:0:%ticket_importance%'
+    Flagged: 'book:0:%ticket_importance%'
   Lore:
-  - '&8Posted By&7: %ticket_player%'
-  - '&8Message&7: %ticket_msg%'
-  - '&8Status&7: %ticket_status%'
-  - '&8Reply&7: %ticket_status_reply%'
-  # Any line with the "%ticket_importance%" with a ticket with no importance will auto delete!
-  - '&8Importance&7: %ticket_importance%'
-  # Any line with the "%ticket_category%" with a ticket with no category will auto delete!
-  - '&8Category&7: %ticket_category%'
-  - '&8Time&7: %ticket_time%'
-  - '&8ClaimedBy&7: &c%ticket_claimedby%'
-  - ''
-  - '&7Click to manage ticket!'
-  Item: 'paper:0:%ticket_importance%'
-Closed:
-  Title: '&lTickets | Closed'
-  Name: '&6&oTicket #%ticket_id%'
-  Lore:
-  - '&8Posted By&7: %ticket_player%'
-  - '&8Status&7: %ticket_status%'
-  - '&8Reply&7: %ticket_status_reply%'
-  - '&8Importance&7: %ticket_importance%'
-  - '&8Category&7: %ticket_category%'
-  # Any line with the "%ticket_rating%" with a ticket with no rating will auto delete!
-  - '&8Rating&7: %ticket_rating%'
-  # Any line with the "%ticket_resolved_msg%" with a ticket with no resolved message will auto delete!
-  - '&8Resolved&7: %ticket_resolved_msg%'
-  - '&8Time&7: %ticket_time%'
-  - '&8ClaimedBy&7: &c%ticket_claimedby%'
-  - ''
-  - '&7Click to manage ticket!'
-  Item: 'paper:0:%ticket_importance%'
+    Normal:
+    - '&8Posted By&7: %ticket_player%'
+    - '&8Message&7: %ticket_msg%'
+    - '&8Status&7: %ticket_status%'
+    - '&8Reply&7: %ticket_status_reply%'
+    # Any line with the "%ticket_importance%" with a ticket with no importance will auto delete!
+    - '&8Importance&7: %ticket_importance%'
+    # Any line with the "%ticket_category%" with a ticket with no category will auto delete!
+    - '&8Category&7: %ticket_category%'
+    - '&8Time&7: %ticket_time%'
+    - '&8ClaimedBy&7: &c%ticket_claimedby%'
+    - ''
+    - '&7Click to manage ticket!'
+    Flagged:
+    - '&fImportance level %ticket_importance%!'
+    - ''
+    - '&8Posted By&7: %ticket_player%'
+    - '&8Message&7: %ticket_msg%'
+    - '&8Status&7: %ticket_status%'
+    - '&8Reply&7: %ticket_status_reply%'
+    - '&8Category&7: %ticket_category%'
+    - '&8Time&7: %ticket_time%'
+    - '&8ClaimedBy&7: &c%ticket_claimedby%'
+    - ''
+    - '&7Click to manage ticket!'
 Status:
   Title: '&lTickets | Status | %player%'
   Name: '&6&oTicket #%ticket_id%'
@@ -51,8 +54,8 @@ Status:
   # Line contains a conditional placeholder which will only show up if ticket was resolved and allowed to rate
   - '&7Right-Click to rate!%ticket_rating_rate%'
   Item:
-    Opened: 'ink_sack:10:%ticket_importance%'
-    Closed: 'ink_sack:8:%ticket_importance%'
+    Opened: 'wool:5:%ticket_importance%'
+    Closed: 'wool:14:%ticket_importance%'
 Reply:
   Title: '&lTickets | Reply'
   Name: '&6&oTicket #%ticket_id%'
@@ -64,7 +67,7 @@ Reply:
   - '&7Click to view full reply!'
   Item: 'slime_ball'
 Info:
-  Title: '&lTickets | Info'
+  Title: '&lTickets | Information'
   Size: 4
   Ticket:
     Name: '&6&oTicket #%ticket_id%'
@@ -75,7 +78,7 @@ Info:
     - '&8ClaimedBy&7: &c%ticket_claimedby%'
     - ''
     - '&7Click to view full message!'
-    Item: 'paper:0:%ticket_importance%'
+    Item: 'book:0:%ticket_importance%'
     Slot: 5
   Teleport:
     Name: '&b&lTeleport'
@@ -84,41 +87,41 @@ Info:
     - ''
     - '&8World&7: %ticket_world%'
     - '&8Coords&7: x:%ticket_x%, y:%ticket_y% z:%ticket_z%'
-    Item: 'beacon'
+    Item: 'compass'
     Slot: 19
   Reply:
     Name: '&d&lReply List'
     Lore:
     - '&8Replies&7: %ticket_replies%'
     - '&7Click to view all replies!%ticket_status_reply_showline%'
-    Item: 'book' 
+    Item: 'paper'
     Slot: 21
   Status:
     Open:
-      Name: '&a&lOpen'
+      Name: '&c&lTicket is Closed'
       Lore:
-      - '&7Click to open ticket!'
-      Item: 'ink_sack:8'
+      - '&7Click to re-open ticket!'
+      Item: 'wool:14'
     Close:
-      Name: '&c&lClose'
+      Name: '&a&lTicket is Open'
       Lore:
       - '&7Click to close ticket!'
-      Item: 'ink_sack:10'
+      Item: 'wool:5'
     Slot: 23
   Flag:
     Enabled:
-      Name: '&b&lFlag'
+      Name: '&b&lUn-Flagged'
       Lore:
       - '&7Click to flag ticket #%ticket_id%'
       - '&7for further investigation'
       - '&8Will give staff a notification'
       - '&8whether opened or closed!'
-      Item: 'ink_sack:8'
+      Item: 'lever'
     Disabled:
-      Name: '&b&lUn-Flag'
+      Name: '&b&lFlagged'
       Lore:
-      - '&7Click to unflag a ticket'
-      Item: 'ink_sack:10'
+      - '&7Click to unflag the ticket'
+      Item: 'torch'
     Slot: 25
   Cancel:
     Name: '&c&lCancel'
@@ -126,16 +129,41 @@ Info:
     - '&7Click to cancel ticket actions!'
     Item: 'barrier' 
     Slot: 27
-  Resolve:
-    Name: '&d&lResolve'
-    Lore:
-    - '&7Click to have a command suggested in chat!'
-    - ''
-    - '&7Once clicked, click on the message in chat'
-    - '&7to have a command suggested to you!'
-    Item: 'redstone'
-    Chat-Json: ''
-    Slot: 31
+#  Claim:
+#    Claimed:
+#      Name: '&a&lTicket Claimed!'
+#      Lore:
+#      - '&bYou have claimed this ticket!'
+#      - ''
+#      - '&8Click to un-claim!'
+#      Item: 'wool:1'
+#    UnClaimed:
+#      Name: '&d&lUn-Claimed Ticket!'
+#      Lore:
+#      - '&fAre you sure you can resolve this ticket?'
+#      - '&fClaim it so other staff members know it''s'
+#      - '&7already being resolved!'
+#      - ''
+#      - '&8Click to claim!'
+#      Item: 'wool:5'
+#    OtherClaimed:
+#      Name: '&c&lTicket Claimed!'
+#      Lore:
+#      - '&fThis ticket was claimed by another'
+#      - '&fStaff member! You are only allowed'
+#      - '&fto view this ticket!'
+#      Item: 'wool:14'
+#    Slot: 1
+#  Resolve:
+#    Name: '&d&lResolve'
+#    Lore:
+#    - '&7Click to have a command suggested in chat!'
+#    - ''
+#    - '&7Once clicked, click on the message in chat'
+#    - '&7to have a command suggested to you!'
+#    Item: 'redstone'
+#    Chat-Json: ''
+#    Slot: 31
 Rating:
   Title: '&lTickets | Status | Rate'
   Size: 1
@@ -248,15 +276,15 @@ Category:
   Manual:
     # Automatic category creation must be disabled to use the following!
     # Section name must be the category you have put under "Categories" in the config.yml
-    Griefing:
-      Name: '&c&lGriefing'
-      Lore:
-      - ''
-      - '&7Set ticket category to a grief report!'
-      Slot: 4
-    Other:
-      Name: '&c&lOther'
-      Lore:
-      - ''
-      - '&7Set ticket category to Other!'
-      Slot: 6
+    - Griefing:
+        Name: '&c&lGriefing'
+        Lore:
+        - ''
+        - '&7Set ticket category to a grief report!'
+        Slot: 3
+    - Other:
+        Name: '&c&lOther'
+        Lore:
+        - ''
+        - '&7Set ticket category to Other!'
+        Slot: 5
