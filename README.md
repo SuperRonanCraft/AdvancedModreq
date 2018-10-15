@@ -3,7 +3,7 @@
 </p>
 
 ## Wheres the Wiki?
-The wiki is available [here](/wiki)!
+The wiki is available [here](../../wiki)!
     
 <p align="center">
   <b><i><a href="https://github.com/SuperRonanCraft/AdvancedModreq/issues">If you have a suggestion, please make an issue!</a></i></b></p>
