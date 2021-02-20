@@ -6,6 +6,7 @@ about: Create a report refering a potential/known bug
 
 **Plugin Version**:
 <!-- Use "/modreq version" to get the plugin version -->
+<!-- Do NOT say "latest", plugin versions are updated frequently and bugs vary from each version -->
 
 **Describe The Bug**:
 <!-- Files not loading nor generating, commands aren't working, ect. -->
